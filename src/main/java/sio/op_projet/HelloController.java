@@ -2,6 +2,7 @@ package sio.op_projet;
 
 import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
@@ -12,7 +13,7 @@ import javafx.scene.layout.AnchorPane;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class HelloController implements initialize {
+public class HelloController implements Initializable {
 
     @FXML
     private AnchorPane mapStart;
