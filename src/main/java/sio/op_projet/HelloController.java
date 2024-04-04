@@ -76,7 +76,6 @@ public class HelloController implements Initializable {
     Description namiD = new Description("Nami", "pirate/nami.gif", "Nami est la navigatrice experte de l'équipage du Chapeau de Paille. Elle est incroyablement habile en cartographie et en navigation, et elle rêve de tracer une carte complète du monde. Bien qu'elle soit initialement motivée par l'argent, elle se soucie profondément de ses amis et est prête à tout pour les protéger.");
     Description luffyD = new Description("Luffy", "pirate/gear5G.gif","Monkey D. Luffy est le capitaine intrépide et excentrique de l'équipage du Chapeau de Paille. Doté du fruit du démon Gomu Gomu, il possède une élasticité incroyable qui lui permet d'étirer son corps comme du caoutchouc. Son rêve est de devenir le Roi des Pirates en trouvant le légendaire trésor One Piece.");
     Description joueurD ;
-    Personnage p;
 
     @Override
     public void  initialize(URL url, ResourceBundle resourceBundle){
