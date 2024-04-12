@@ -7,15 +7,33 @@ public class Personnage {
     private int vieActuelle;
     private int attaque;
     private int defense;
-    private int soin;
+    private int fuite;
 
-    public Personnage(String nom, int vieMax, int vieActuelle, int attaque, int defense, int soin) {
-        this.nom = nom;
-        this.vieMax = vieMax;
-        this.vieActuelle = vieActuelle;
-        this.attaque = attaque;
-        this.defense = defense;
-        this.soin = soin;
+    public Personnage(Description description) {
+        this.description= description;
+        this.vieActuelle = vieMax;
+    }
+    public int alea() { return (int)(Math.random() * 101 );}
+    public int attaque(){
+        return this.attaque;
+    }
+    public int defense(int att){
+        int nbAleatoire=alea();
+        if(nbAleatoire<=33){
+            att=0;
+            return att;
+        }
+        return att;
+    }
+    public boolean fuite(){
+        if (alea()>= this.fuite){
+            return true;
+        }
+        return false;
+    }
+    public int vie(int att){
+        this.vieActuelle -=  att;
+        return att;
     }
 
     public String getNom() {
@@ -56,14 +74,6 @@ public class Personnage {
 
     public void setDefense(int defense) {
         this.defense = defense;
-    }
-
-    public int getSoin() {
-        return soin;
-    }
-
-    public void setSoin(int soin) {
-        this.soin = soin;
     }
 
     public Description getDescription() {
