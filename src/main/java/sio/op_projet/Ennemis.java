@@ -16,6 +16,13 @@ public class Ennemis {
         this.attaque = attaque;
         this.defense = defense;
     }
+    public int vieE(int degat){
+        this.vieActuelle-=degat;
+        return degat;
+    }
+    public int attaqueE(){
+        return this.attaque;
+    }
 
     public String getNom() {
         return nom;

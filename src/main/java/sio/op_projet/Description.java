@@ -3,17 +3,15 @@ package sio.op_projet;
 public class Description {
     private String nom;
     private String image;
-    private String description;
     private int vieMax;
     private int vieActuelle;
     private int attaque;
     private int defense;
     private int fuite;
 
-    public Description(String nom, String image, String description, int vieMax, int attaque, int defense, int fuite) {
+    public Description(String nom, String image, int vieMax, int attaque, int defense, int fuite) {
         this.nom = nom;
         this.image = image;
-        this.description = description;
         this.vieMax = vieMax;
         this.vieActuelle = vieMax;
         this.attaque = attaque;
@@ -28,15 +26,17 @@ public class Description {
         return vieMax;
     }
     public int defense(int att){
-        int nbAleatoire=alea();
-        if(nbAleatoire<=33){
-            att=0;
-            return att;
+        int degatsReduits = att-this.defense;
+        if (degatsReduits > 0) {
+            this.vieActuelle -= degatsReduits;
+            return degatsReduits;
+        } else {
+            return 0;
         }
-        return att;
     }
     public boolean fuite(){
-        if (alea()>= this.fuite){
+        if (alea()<= this.fuite){
+
             return true;
         }
         return false;
@@ -96,13 +96,5 @@ public class Description {
 
     public void setImage(String image) {
         this.image = image;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 }
