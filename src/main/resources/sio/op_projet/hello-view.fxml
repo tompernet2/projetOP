@@ -7,122 +7,122 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.op_projet.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.op_projet.HelloController">
    <children>
-      <AnchorPane fx:id="mapStart" prefHeight="402.0" prefWidth="646.0" visible="false">
+      <AnchorPane fx:id="mapStart" prefHeight="806.0" prefWidth="1278.0" visible="false">
          <children>
-            <ImageView fitHeight="401.0" fitWidth="653.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="799.0" fitWidth="1450.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/map/ciel.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="btnStart1" fitHeight="218.0" fitWidth="459.0" layoutX="91.0" layoutY="119.0" onMouseClicked="#clickedStart1" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btnStart1" fitHeight="282.0" fitWidth="966.0" layoutX="250.0" layoutY="240.0" onMouseClicked="#clickedStart1" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/onepiece.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="mapChoixCapitaine" prefHeight="401.0" prefWidth="600.0" visible="false">
+      <AnchorPane fx:id="mapChoixCapitaine" prefHeight="861.0" prefWidth="1281.0" visible="false">
          <children>
-            <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="853.0" fitWidth="1353.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/map/papierVieuP.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="112.0" fitWidth="371.0" layoutX="115.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="90.0" fitWidth="838.0" layoutX="53.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/choix.png" />
                </image>
             </ImageView>
-            <ScrollPane layoutX="22.0" layoutY="80.0" prefHeight="314.0" prefWidth="234.0">
+            <ScrollPane layoutX="74.0" layoutY="156.0" prefHeight="590.0" prefWidth="443.0">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="460.0" prefWidth="235.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1210.0" prefWidth="423.0">
                      <children>
-                        <ImageView fx:id="choixRoger" fitHeight="88.0" fitWidth="114.0" layoutX="100.0" layoutY="94.0" onMouseClicked="#clickedChoixRoger" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="choixRoger" fitHeight="211.0" fitWidth="222.0" layoutX="208.0" layoutY="208.0" onMouseClicked="#clickedChoixRoger" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../projetOP/personnages/pirate/roger.gif" />
+                              <Image url="@../../projetOP/personnages/selection/roger.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="choiWB" fitHeight="77.0" fitWidth="91.0" layoutX="107.0" layoutY="14.0" onMouseClicked="#clickedChoixWB" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="choiWB" fitHeight="211.0" fitWidth="209.0" layoutX="210.0" onMouseClicked="#clickedChoixWB" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../projetOP/personnages/pirate/barbeBlanche.gif" />
+                              <Image url="@../../projetOP/personnages/selection/barbeBlanche.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="choixLuffy" fitHeight="87.0" fitWidth="115.0" layoutX="7.0" layoutY="8.0" onMouseClicked="#clickedChoixLuffy" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="choixLuffy" fitHeight="213.0" fitWidth="210.0" onMouseClicked="#clickedChoixLuffy" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../projetOP/personnages/pirate/gear5G.gif" />
+                              <Image url="@../../projetOP/personnages/selection/luffy.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="88.0" fitWidth="102.0" layoutX="-2.0" layoutY="95.0" onMouseClicked="#clickedChoixCrocodile" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="211.0" fitWidth="222.0" layoutX="-1.0" layoutY="416.0" onMouseClicked="#clickedChoixBN" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../projetOP/personnages/pirate/crocodile.gif" />
+                              <Image url="@../../projetOP/personnages/selection/barbeNoir.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="87.0" fitWidth="131.0" layoutX="7.0" layoutY="180.0" onMouseClicked="#clickedChoixBN" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="choixDoflamingo" fitHeight="211.0" fitWidth="210.0" layoutX="208.0" layoutY="419.0" onMouseClicked="#clickedhoixDoflamingo" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../projetOP/personnages/pirate/barbeNoir.gif" />
+                              <Image url="@../../projetOP/personnages/selection/doflamingo.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="choixDoflamingo" fitHeight="77.0" fitWidth="77.0" layoutX="117.0" layoutY="185.0" onMouseClicked="#clickedhoixDoflamingo" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="210.0" fitWidth="213.0" layoutX="149.0" layoutY="710.0" onMouseClicked="#clickedChoixBaggy" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../projetOP/personnages/pirate/doflamingoG.gif" />
+                              <Image url="@../../projetOP/personnages/selection/baggy.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="96.0" fitWidth="130.0" layoutX="1.0" layoutY="267.0" onMouseClicked="#clickedChoixBaggy" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="218.0" fitWidth="211.0" layoutY="209.0" onMouseClicked="#clickedChoixCrocodile" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../projetOP/personnages/pirate/baggy.gif" />
+                              <Image url="@../../projetOP/personnages/selection/crocodile.png" />
                            </image>
                         </ImageView>
                      </children>
                   </AnchorPane>
               </content>
             </ScrollPane>
-            <ImageView fx:id="imageChoixCap" fitHeight="150.0" fitWidth="200.0" layoutX="311.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="311.0" layoutY="288.0" onMouseClicked="#clickedChoixCap" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imageChoixCap" fitHeight="361.0" fitWidth="324.0" layoutX="696.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="121.0" fitWidth="401.0" layoutX="717.0" layoutY="584.0" onMouseClicked="#clickedChoixCap" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/start.png" />
                </image>
             </ImageView>
-            <Label fx:id="nomCap" alignment="CENTER" layoutX="311.0" layoutY="71.0" prefHeight="58.0" prefWidth="222.0" textAlignment="CENTER">
+            <Label fx:id="nomCap" alignment="CENTER" layoutX="616.0" layoutY="14.0" prefHeight="194.0" prefWidth="484.0" textAlignment="CENTER">
                <font>
-                  <Font size="25.0" />
+                  <Font size="40.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="mapDebut" prefHeight="400.0" prefWidth="600.0">
+      <AnchorPane fx:id="mapDebut" prefHeight="811.0" prefWidth="1282.0" visible="false">
          <children>
-            <ImageView fitHeight="345.0" fitWidth="606.0" layoutX="-1.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="790.0" fitWidth="1284.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/map/mer.jpeg" />
                </image>
             </ImageView>
-            <ImageView fx:id="btnAventure" fitHeight="301.0" fitWidth="299.0" layoutX="283.0" layoutY="73.0" onMouseClicked="#clickedAventure" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btnAventure" fitHeight="425.0" fitWidth="422.0" layoutX="735.0" layoutY="273.0" onMouseClicked="#clickedAventure" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../projetOP/map/canot.png" />
+                  <Image url="@../../projetOP/logo/canot.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="btnEquipage" fitHeight="195.0" fitWidth="200.0" layoutX="60.0" layoutY="136.0" onMouseClicked="#clickedEquipage" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btnEquipage" fitHeight="404.0" fitWidth="357.0" layoutX="266.0" layoutY="273.0" onMouseClicked="#clickedEquipage" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/pirate.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="622.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="140.0" fitWidth="1290.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/map/bandeP.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="108.0" onMouseClicked="#clickedRetourDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="121.0" fitWidth="154.0" onMouseClicked="#clickedRetourDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/retour.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="mapEquipage" layoutX="-3.0" prefHeight="400.0" prefWidth="606.0" visible="false">
+      <AnchorPane fx:id="mapEquipage" layoutX="-3.0" prefHeight="806.0" prefWidth="1288.0" visible="false">
          <children>
-            <ImageView fitHeight="408.0" fitWidth="606.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="887.0" fitWidth="1310.0" layoutX="-6.0" layoutY="-62.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/map/boisCase.png" />
                </image>
@@ -132,56 +132,21 @@
                   <Image url="@../../projetOP/logo/retour.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imageP" fitHeight="150.0" fitWidth="200.0" layoutX="1.0" layoutY="52.0" onMouseClicked="#clickedCap" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="419.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="275.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="141.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="412.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="288.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="133.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="imageP" fitHeight="282.0" fitWidth="309.0" layoutX="14.0" layoutY="121.0" onMouseClicked="#clickedCap" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="mapDes" prefHeight="400.0" prefWidth="602.0" visible="false">
+      <AnchorPane fx:id="mapDes" prefHeight="800.0" prefWidth="1280.0" visible="false">
          <children>
-            <ImageView fitHeight="446.0" fitWidth="601.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="942.0" fitWidth="1282.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/map/papierVieu.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="imagePerso" fitHeight="231.0" fitWidth="261.0" layoutX="20.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imagePerso" fitHeight="422.0" fitWidth="511.0" layoutX="185.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
                </image>
@@ -191,60 +156,60 @@
                   <Image url="@../../projetOP/logo/retour.png" />
                </image>
             </ImageView>
-            <Label fx:id="nomPerso" alignment="CENTER" layoutX="5.0" layoutY="279.0" prefHeight="88.0" prefWidth="292.0">
+            <Label fx:id="nomPerso" alignment="CENTER" layoutX="185.0" layoutY="529.0" prefHeight="134.0" prefWidth="506.0">
                <font>
-                  <Font name="System Italic" size="40.0" />
+                  <Font name="System Italic" size="55.0" />
                </font></Label>
-            <ImageView fitHeight="69.0" fitWidth="77.0" layoutX="311.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="121.0" fitWidth="127.0" layoutX="744.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/coeur.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="97.0" fitWidth="46.0" layoutX="326.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="151.0" fitWidth="111.0" layoutX="774.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/epee.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="84.0" fitWidth="71.0" layoutX="313.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="134.0" fitWidth="127.0" layoutX="752.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/bouclier.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="97.0" fitWidth="71.0" layoutX="312.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="151.0" fitWidth="140.0" layoutX="744.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/fuite.png" />
                </image>
             </ImageView>
-            <Label fx:id="lblVieD" alignment="CENTER" layoutX="411.0" layoutY="37.0" prefHeight="46.0" prefWidth="140.0">
+            <Label fx:id="lblVieD" alignment="CENTER" layoutX="936.0" layoutY="64.0" prefHeight="74.0" prefWidth="282.0">
                <font>
-                  <Font size="30.0" />
+                  <Font size="50.0" />
                </font>
             </Label>
-            <Label fx:id="lblAttaqueD" alignment="CENTER" layoutX="411.0" layoutY="130.0" prefHeight="46.0" prefWidth="140.0">
+            <Label fx:id="lblAttaqueD" alignment="CENTER" layoutX="936.0" layoutY="239.0" prefHeight="74.0" prefWidth="282.0">
                <font>
-                  <Font size="30.0" />
+                  <Font size="50.0" />
                </font>
             </Label>
-            <Label fx:id="lblDefenseD" alignment="CENTER" layoutX="411.0" layoutY="229.0" prefHeight="46.0" prefWidth="140.0">
+            <Label fx:id="lblDefenseD" alignment="CENTER" layoutX="936.0" layoutY="390.0" prefHeight="74.0" prefWidth="282.0">
                <font>
-                  <Font size="30.0" />
+                  <Font size="50.0" />
                </font>
             </Label>
-            <Label fx:id="lblFuiteD" alignment="CENTER" layoutX="411.0" layoutY="320.0" prefHeight="46.0" prefWidth="140.0">
+            <Label fx:id="lblFuiteD" alignment="CENTER" layoutX="936.0" layoutY="559.0" prefHeight="74.0" prefWidth="282.0">
                <font>
-                  <Font size="30.0" />
+                  <Font size="50.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="mapCarte" prefHeight="400.0" prefWidth="600.0" visible="false">
+      <AnchorPane fx:id="mapCarte" prefHeight="800.0" prefWidth="1282.0" visible="false">
          <children>
-            <ImageView fitHeight="423.0" fitWidth="601.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="855.0" fitWidth="1288.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/map/papierVieu.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="509.0" fitWidth="401.0" layoutX="199.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="799.0" fitWidth="791.0" layoutX="491.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/map/grandLine.png" />
                </image>
@@ -254,129 +219,139 @@
                   <Image url="@../../projetOP/logo/retour.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imageCarte" fitHeight="150.0" fitWidth="154.0" layoutX="14.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imageCarte" fitHeight="477.0" fitWidth="390.0" layoutX="49.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="102.0" layoutX="213.0" layoutY="369.0" onMouseClicked="#clickedIle11" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="46.0" fitWidth="56.0" layoutX="526.0" layoutY="730.0" onMouseClicked="#clickedIle11" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/orbe.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="102.0" layoutX="249.0" layoutY="305.0" onMouseClicked="#clickedIle12" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="36.0" fitWidth="49.0" layoutX="598.0" layoutY="611.0" onMouseClicked="#clickedIle12" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/orbe.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="102.0" layoutX="216.0" layoutY="271.0" onMouseClicked="#clickedIle13" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="541.0" layoutY="548.0" onMouseClicked="#clickedIle13" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/orbe.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="102.0" layoutX="265.0" layoutY="240.0" onMouseClicked="#clickedIle14" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="36.0" fitWidth="68.0" layoutX="626.0" layoutY="482.0" onMouseClicked="#clickedIle14" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/orbe.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="102.0" layoutX="284.0" layoutY="177.0" onMouseClicked="#clickedIle15" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="36.0" fitWidth="42.0" layoutX="671.0" layoutY="362.0" onMouseClicked="#clickedIle15" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/orbe.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="102.0" layoutX="307.0" layoutY="150.0" onMouseClicked="#clickedIle16" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="804.0" layoutY="238.0" onMouseClicked="#clickedIle16" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/orbe.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="102.0" layoutX="323.0" layoutY="131.0" onMouseClicked="#clickedIle17" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="723.0" layoutY="309.0" onMouseClicked="#clickedIle17" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/orbe.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="102.0" layoutX="347.0" layoutY="119.0" onMouseClicked="#clickedIle18" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="33.0" fitWidth="45.0" layoutX="745.0" layoutY="266.0" onMouseClicked="#clickedIle18" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/orbe.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="mapCombat" prefHeight="401.0" prefWidth="601.0" visible="false">
+      <AnchorPane fx:id="mapCombat" prefHeight="806.0" prefWidth="1282.0">
          <children>
-            <ImageView fx:id="imageFond" fitHeight="404.0" fitWidth="602.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="862.0" fitWidth="1281.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../projetOP/map/fondCombat3.gif" />
+                  <Image url="@../../projetOP/map/papierVieuNew.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="137.0" fitWidth="604.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imageFond" fitHeight="538.0" fitWidth="1284.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../projetOP/map/bande2.png" />
+                  <Image url="@../../projetOP/map/bonfondCombat1.gif" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="309.0" layoutX="-15.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="121.0" fitWidth="577.0" layoutX="22.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/vieV.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="69.0" fitWidth="309.0" layoutX="313.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="133.0" fitWidth="775.0" layoutX="662.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/vieEnnemi.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imagePC" fitHeight="185.0" fitWidth="240.0" layoutX="116.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imagePC" fitHeight="290.0" fitWidth="350.0" layoutX="243.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/personnages/pirate/luffy.gif" />
                </image>
             </ImageView>
-            <ImageView fx:id="imageEnnemis" fitHeight="178.0" fitWidth="200.0" layoutX="368.0" layoutY="221.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imageEnnemis" fitHeight="290.0" fitWidth="357.0" layoutX="633.0" layoutY="465.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/personnages/pirate/shiki.gif" />
                </image>
             </ImageView>
-            <ImageView fitHeight="289.0" fitWidth="120.0" layoutX="25.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="471.0" fitWidth="209.0" layoutX="7.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/rectrangle.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="84.0" fitWidth="46.0" layoutX="57.0" layoutY="99.0" onMouseClicked="#clickedAttaque" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="112.0" fitWidth="58.0" layoutX="64.0" layoutY="316.0" onMouseClicked="#clickedAttaque" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/epee.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="44.0" layoutY="195.0" onMouseClicked="#clickedDefense" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="171.0" fitWidth="91.0" layoutX="43.0" layoutY="464.0" onMouseClicked="#clickedDefense" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/bouclier.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="69.0" fitWidth="63.0" layoutX="46.0" layoutY="281.0" onMouseClicked="#clickedFuite" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="117.0" fitWidth="84.0" layoutX="40.0" layoutY="630.0" onMouseClicked="#clickedFuite" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/fuite.png" />
                </image>
             </ImageView>
-            <Label layoutX="192.0" layoutY="-1.0" prefHeight="25.0" prefWidth="12.0" text="/">
+            <Label layoutX="410.0" layoutY="109.0" prefHeight="46.0" prefWidth="14.0" text="/">
                <font>
-                  <Font size="20.0" />
+                  <Font size="30.0" />
                </font></Label>
-            <Label fx:id="lblVieActuelleP" alignment="CENTER" layoutX="146.0" layoutY="-2.0" prefHeight="30.0" prefWidth="46.0" text="1000" textAlignment="CENTER">
+            <Label fx:id="lblVieActuelleP" alignment="CENTER" layoutX="335.0" layoutY="109.0" prefHeight="46.0" prefWidth="74.0" text="1000" textAlignment="CENTER">
                <font>
-                  <Font size="20.0" />
+                  <Font size="30.0" />
                </font></Label>
-            <Label fx:id="lblVieMaxP" alignment="CENTER" layoutX="204.0" layoutY="-1.0" prefHeight="30.0" prefWidth="46.0" text="1000" textAlignment="CENTER">
+            <Label fx:id="lblVieMaxP" alignment="CENTER" layoutX="417.0" layoutY="109.0" prefHeight="46.0" prefWidth="74.0" text="1000" textAlignment="CENTER">
                <font>
-                  <Font size="20.0" />
+                  <Font size="30.0" />
                </font></Label>
-            <Label layoutX="395.0" layoutY="-2.0" text="/">
+            <Label layoutX="829.0" layoutY="109.0" text="/">
                <font>
-                  <Font size="20.0" />
+                  <Font size="30.0" />
                </font></Label>
-            <Label fx:id="lblVieActuelleE" alignment="CENTER" layoutX="349.0" layoutY="-2.0" prefHeight="30.0" prefWidth="46.0" text="1000" textAlignment="CENTER">
+            <Label fx:id="lblVieActuelleE" alignment="CENTER" layoutX="755.0" layoutY="109.0" prefHeight="46.0" prefWidth="74.0" text="1000" textAlignment="CENTER">
                <font>
-                  <Font size="20.0" />
+                  <Font size="30.0" />
                </font></Label>
-            <Label fx:id="lblVieMaxE" alignment="CENTER" layoutX="403.0" layoutY="-2.0" prefHeight="30.0" prefWidth="46.0" text="1000" textAlignment="CENTER">
+            <Label fx:id="lblVieMaxE" alignment="CENTER" layoutX="835.0" layoutY="109.0" prefHeight="46.0" prefWidth="74.0" text="1000" textAlignment="CENTER">
                <font>
-                  <Font size="20.0" />
+                  <Font size="30.0" />
                </font></Label>
+            <Label fx:id="lblNomD" alignment="CENTER" layoutX="94.0" layoutY="20.0" prefHeight="74.0" prefWidth="400.0">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNomE" alignment="CENTER" layoutX="781.0" layoutY="20.0" prefHeight="74.0" prefWidth="400.0">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

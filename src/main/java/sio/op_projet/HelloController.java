@@ -86,6 +86,10 @@ public class HelloController implements Initializable {
     private Label lblDefenseD;
     @FXML
     private Label lblVieD;
+    @FXML
+    private Label lblNomD;
+    @FXML
+    private Label lblNomE;
 
     public void invisible(AnchorPane apCourante) {apCourante.setVisible(false);return;}
     public void visible(AnchorPane apCourante){apCourante.setVisible(true);return;}
@@ -130,6 +134,46 @@ public class HelloController implements Initializable {
             1000,
             100,
             50);
+    Ennemis smokerE = new Ennemis("Smoker", "pirate/smoker.gif",
+            2000,
+            70,
+            30);
+    Ennemis kizaruE = new Ennemis("Kizaru", "pirate/kizaru.gif",
+            3000,
+            80,
+            50);
+    Ennemis akainuE = new Ennemis("Akainu", "pirate/akainu.gif",
+            3500,
+            90,
+            70);
+    Ennemis doflamingoE = new Ennemis("Doflamingo", "pirate/doflamingo.gif",
+            2800,
+            80,
+            40);
+    Ennemis crocodileE = new Ennemis("Crocodile", "pirate/crocodile.gif",
+            2500,
+            70,
+            60);
+    Ennemis moriaE = new Ennemis("Gecko Moria", "pirate/moria.gif",
+            2200,
+            60,
+            50);
+    Ennemis hancockE = new Ennemis("Boa Hancock", "pirate/hancock.gif",
+            1800,
+            50,
+            80);
+    Ennemis enelE = new Ennemis("Enel", "pirate/enel.gif",
+            3200,
+            90,
+            60);
+    Ennemis kaidoE = new Ennemis("Kaido", "pirate/kaido.gif",
+            4000,
+            100,
+            80);
+    Ennemis bigMomE = new Ennemis("Big Mom", "pirate/bigMom.gif",
+            3800,
+            90,
+            70);
     Description joueurD ;
     Ennemis e;
     @Override
@@ -327,6 +371,7 @@ public class HelloController implements Initializable {
         changeImageViewImg(imageEnnemis, "personnages/"+ennemis.getImage());
         lblVieActuelleE.setText(String.valueOf(ennemis.getVieActuelle()));
         lblVieMaxE.setText(String.valueOf(ennemis.getVieMax()));
+        lblNomE.setText(String.valueOf(ennemis.getNom()));
     }
     public void afficherPersonnage(Description description){
         nomCap.setText(description.getNom());
@@ -345,6 +390,7 @@ public class HelloController implements Initializable {
         lblAttaqueD.setText(String.valueOf(description.getAttaque()));
         lblDefenseD.setText(String.valueOf(description.getDefense()));
         lblFuiteD.setText(String.valueOf(description.getFuite()));
+        lblNomD.setText(String.valueOf(description.getNom()));
     }
     @FXML
     public void clickedRetourDebut(Event event) {
@@ -362,9 +408,20 @@ public class HelloController implements Initializable {
     public void clickedIle11(Event event) {
         clearAll();
         visible(mapCombat);
-        e=enerE;
+        changeImageViewImg(imageFond, "map/bonFondCombat1.gif");
+        e=smokerE;
         changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-        afficherEnnemis(enerE);
+
+        afficherEnnemis(e);
+    }
+    @FXML
+    public void clickedIle12(Event event) {
+        clearAll();
+        visible(mapCombat);
+        changeImageViewImg(imageFond, "map/bonFondCombat2.gif");
+        e=crocodileE;
+        changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+        afficherEnnemis(e);
     }
     @FXML
     public void clickedIle15(Event event) {
@@ -384,11 +441,7 @@ public class HelloController implements Initializable {
         visible(mapCombat);
     }
 
-    @FXML
-    public void clickedIle12(Event event) {
-        clearAll();
-        visible(mapCombat);
-    }
+
 
     @FXML
     public void clickedIle18(Event event) {
