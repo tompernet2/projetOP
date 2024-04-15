@@ -43,6 +43,9 @@ public class Description {
     }
     public int vie(int att){
         this.vieActuelle -=  att;
+        if (this.vieActuelle<0){
+            this.vieActuelle=0;
+        }
         return att;
     }
 
