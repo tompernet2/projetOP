@@ -307,6 +307,292 @@ public class HelloController implements Initializable {
             50,
             10,
             100);
+    Ennemis magellanE = new Ennemis("Magellan", "pirate/magellan.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis kakuE = new Ennemis("Kaku", "pirate/kaku.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis lucciE = new Ennemis("Lucci", "pirate/lucci.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis fujitoraE = new Ennemis("Fujitora", "pirate/fujitora.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis kizaruE = new Ennemis("Kirzaru", "pirate/kizaru.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis aokijiE = new Ennemis("Aokiji", "pirate/aokiji.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis akainuE = new Ennemis("Akainu", "pirate/akainu.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis garpE = new Ennemis("Garp", "pirate/garp.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis sengokuE = new Ennemis("Sengoku", "pirate/sengoku.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis foxyE = new Ennemis("Foxy", "pirate/foxy.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis morganE = new Ennemis("Morgan", "pirate/morgan.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis monetE = new Ennemis("Monet", "pirate/monet.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis cesarE = new Ennemis("César", "pirate/cesar.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis giantE = new Ennemis("Géant", "pirate/geant.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis trebolE = new Ennemis("Trébol", "pirate/trebol.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis deflamingoE = new Ennemis("Doflamingo", "pirate/doflamingo.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis jinbeE = new Ennemis("Jinbe", "pirate/jinbei.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis moriaE = new Ennemis("Moria", "pirate/moria.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis marcoE = new Ennemis("Marco", "pirate/marco.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis mihawkE = new Ennemis("Mihawk", "pirate/mihawk.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis shanksE = new Ennemis("Shanks", "pirate/shanks.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis shikiE = new Ennemis("Shiki", "pirate/shiki.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis orochiE = new Ennemis("Orochi", "pirate/orochi.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis whoE = new Ennemis("Who's who", "pirate/who.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis drakeE = new Ennemis("X-Drake", "pirate/drake.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis sasakiE = new Ennemis("Sasaki", "pirate/sasaki.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis blackmariaE = new Ennemis("Black Maria", "pirate/blackMaria.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis yamatoE = new Ennemis("Yamato", "pirate/yamato.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis jackE = new Ennemis("Jack", "pirate/jack.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis queenE = new Ennemis("Queen", "pirate/queen.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis kingE = new Ennemis("King", "pirate/king.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis bigmomE = new Ennemis("Bigmom", "pirate/bigmom.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis kaidoE = new Ennemis("Kaido", "pirate/kaido.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis vascoE = new Ennemis("Vasco Shot", "pirate/vasco.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis pizarroE = new Ennemis("Pizarro", "pirate/pizarro.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis wasatsumiE = new Ennemis("Wadatsumi", "pirate/wadatsumi.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis augurE = new Ennemis("Van augur", "pirate/augur.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis devonE = new Ennemis("Devon", "pirate/devon.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis burgessE = new Ennemis("Burgess", "pirate/burgess.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis teachE = new Ennemis("Teach", "pirate/barbeNoir.gif",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis vegapunkE = new Ennemis("Vegapunk", "pirate/vegapunk.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis doyensE = new Ennemis("Les 5 doyens", "pirate/5doyen.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+    Ennemis imuE = new Ennemis("IMU", "pirate/imu.png",
+            1000,
+            100,
+            50,
+            10,
+            100);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -315,7 +601,7 @@ public class HelloController implements Initializable {
     Description joueurD ;
     Ennemis e;
     int berryActuel = 0;
-    int victoireTotal1 = 49;
+    int victoireTotal1 = 0;
 
     @Override
     public void  initialize(URL url, ResourceBundle resourceBundle){
@@ -985,8 +1271,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat7.gif");
+            e=magellanE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -997,8 +1283,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat8.gif");
+            e=kakuE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1009,8 +1295,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat9.gif");
+            e=lucciE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1021,8 +1307,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat10.gif");
+            e=fujitoraE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1033,8 +1319,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat11.gif");
+            e=kizaruE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1045,8 +1331,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat12.gif");
+            e=aokijiE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1057,8 +1343,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat13.gif");
+            e=akainuE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1069,8 +1355,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat14.gif");
+            e=garpE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1082,8 +1368,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat15.gif");
+            e=sengokuE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1097,8 +1383,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat1.gif");
+            e=foxyE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1109,8 +1395,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat2.gif");
+            e=morganE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1121,8 +1407,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat3.gif");
+            e=monetE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1133,8 +1419,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat4.gif");
+            e=cesarE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1145,8 +1431,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat5.gif");
+            e=giantE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1158,7 +1444,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=trebolE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1169,8 +1455,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat7.gif");
+            e=deflamingoE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1181,8 +1467,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat8.gif");
+            e=jinbeE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1193,8 +1479,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat9.gif");
+            e=moriaE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1205,8 +1491,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat10.gif");
+            e=marcoE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1217,8 +1503,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat11.gif");
+            e=mihawkE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1229,8 +1515,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat12.gif");
+            e=shanksE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1241,8 +1527,8 @@ public class HelloController implements Initializable {
             System.out.println("oui");
             clearAll();
             visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            changeImageViewImg(imageFond, "map/bonFondCombat13.gif");
+            e=shikiE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1258,7 +1544,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=orochiE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1270,7 +1556,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=whoE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1282,7 +1568,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=drakeE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1294,7 +1580,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=sasakiE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1306,7 +1592,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=blackmariaE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1318,7 +1604,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=yamatoE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1330,7 +1616,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=jackE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1342,7 +1628,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=queenE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1354,7 +1640,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=kingE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1366,7 +1652,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=bigmomE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1378,7 +1664,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=kaidoE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1393,7 +1679,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=vascoE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1405,7 +1691,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=pizarroE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1417,7 +1703,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=wasatsumiE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1429,7 +1715,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=augurE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1441,7 +1727,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=devonE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1453,7 +1739,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=burgessE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1465,7 +1751,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=teachE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1477,7 +1763,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=vegapunkE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1489,7 +1775,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=doyensE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }
@@ -1504,7 +1790,7 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
+            e=imuE;
             changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
             afficherEnnemis(e);
         }

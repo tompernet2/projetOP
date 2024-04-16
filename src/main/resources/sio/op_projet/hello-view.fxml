@@ -550,7 +550,7 @@
                   <Image url="@../../projetOP/logo/orbe.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="ileBoss" fitHeight="52.0" fitWidth="56.0" layoutX="862.0" layoutY="204.0" onMouseClicked="#clickedIleBoss" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ileBoss" fitHeight="62.0" fitWidth="74.0" layoutX="853.0" layoutY="198.0" onMouseClicked="#clickedIleBoss" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/orbeR.png" />
                </image>
