@@ -117,91 +117,93 @@ public class HelloController implements Initializable {
     @FXML
     private ImageView ile14;
     @FXML
-    private ImageView ile11119;
+    private ImageView ile28;
     @FXML
-    private ImageView ile11118;
+    private ImageView ile29;
     @FXML
-    private ImageView ile11117;
+    private ImageView ile22;
     @FXML
-    private ImageView ile11116;
+    private ImageView ile23;
     @FXML
-    private ImageView ile11115;
+    private ImageView ile21;
     @FXML
-    private ImageView ile11114;
+    private ImageView ile26;
     @FXML
-    private ImageView ile11113;
+    private ImageView ile27;
     @FXML
-    private ImageView ile11112;
+    private ImageView ile24;
     @FXML
-    private ImageView ile11111;
+    private ImageView ile25;
     @FXML
-    private ImageView ile1111;
+    private ImageView ile210;
     @FXML
-    private ImageView ile1110;
+    private ImageView ile55;
     @FXML
-    private ImageView ile111110;
+    private ImageView ile56;
     @FXML
-    private ImageView ile111111;
+    private ImageView ile53;
     @FXML
-    private ImageView ile111112;
+    private ImageView ile54;
     @FXML
-    private ImageView ile111;
+    private ImageView ile410;
     @FXML
-    private ImageView ile117;
+    private ImageView ile59;
     @FXML
-    private ImageView ile116;
+    private ImageView ile57;
     @FXML
-    private ImageView ile119;
+    private ImageView ile411;
     @FXML
-    private ImageView ile118;
+    private ImageView ile58;
     @FXML
-    private ImageView ile113;
+    private ImageView ile51;
     @FXML
-    private ImageView ile112;
+    private ImageView ile52;
     @FXML
-    private ImageView ile115;
+    private ImageView ile44;
     @FXML
-    private ImageView ile114;
+    private ImageView ile45;
     @FXML
-    private ImageView ile1111271;
+    private ImageView ile42;
     @FXML
-    private ImageView ile111117;
+    private ImageView ile43;
     @FXML
-    private ImageView ile111118;
+    private ImageView ile48;
     @FXML
-    private ImageView ile111119;
+    private ImageView ile49;
     @FXML
-    private ImageView ile111113;
+    private ImageView ile46;
     @FXML
-    private ImageView ile111114;
+    private ImageView ile47;
     @FXML
-    private ImageView ile111115;
+    private ImageView ile41;
     @FXML
-    private ImageView ile111116;
+    private ImageView ile39;
     @FXML
-    private ImageView ile111128;
+    private ImageView ile33;
     @FXML
-    private ImageView ile111129;
+    private ImageView ile34;
     @FXML
-    private ImageView ile111124;
+    private ImageView ile31;
     @FXML
-    private ImageView ile111125;
+    private ImageView ile32;
     @FXML
-    private ImageView ile111126;
+    private ImageView ile37;
     @FXML
-    private ImageView ile111127;
+    private ImageView ile311;
     @FXML
-    private ImageView ile111120;
+    private ImageView ile38;
     @FXML
-    private ImageView ile111121;
+    private ImageView ile310;
     @FXML
-    private ImageView ile111122;
+    private ImageView ile35;
     @FXML
-    private ImageView ile111123;
+    private ImageView ile313;
     @FXML
-    private ImageView ile111131;
+    private ImageView ile36;
     @FXML
-    private ImageView ile111130;
+    private ImageView ile312;
+    @FXML
+    private ImageView ileBoss;
 
     public void invisible(AnchorPane apCourante) {apCourante.setVisible(false);return;}
     public void visible(AnchorPane apCourante){apCourante.setVisible(true);return;}
@@ -241,10 +243,15 @@ public class HelloController implements Initializable {
             60);
     Description crocodileD = new Description("Crocodile",
             "pirate/crocodile.gif",
-            4000,
+            10,
             200,
-            200,
-            20);
+            10,
+            100);
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////           ENNEMIS          ///////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
     Ennemis cobyE = new Ennemis("Coby", "pirate/coby.gif",
             1500,
@@ -294,94 +301,22 @@ public class HelloController implements Initializable {
             50,
             10,
             100);
-
-    Description doflamingoD = new Description("Doflamingo", "pirate/doflamingoG.gif",
+    Ennemis sentomaruE = new Ennemis("Sentomaru", "pirate/sentomaru.gif",
             1000,
-            20,
-            50,
-            50);
-    Description bnD = new Description("Barbe Noire", "pirate/barbeNoir.gif",
-            1000,
-            20,
-            50,
-            50);
-    Description wbD = new Description("Barbe Blanche", "pirate/barbeBlanche.gif",
-            9000,
-            20,
-            50,
-            50);
-    Description rogerD = new Description("Roger", "pirate/roger.gif",
-            1000,
-            1000,
-            1000,
-            1000);
-
-
-
-
-
-
-
-
-    Ennemis kizaruE = new Ennemis("Kizaru", "pirate/kizaru.gif",
-            3000,
-            80,
-            50,
-            10,
-            100);
-    Ennemis akainuE = new Ennemis("Akainu", "pirate/akainu.gif",
-            3500,
-            90,
-            70,
-            10,
-            100);
-    Ennemis doflamingoE = new Ennemis("Doflamingo", "pirate/doflamingo.gif",
-            2800,
-            80,
-            40,
-            10,
-            100);
-    Ennemis crocodileE = new Ennemis("Crocodile", "pirate/crocodile.gif",
-            2500,
-            70,
-            60,
-            10,
-            100);
-    Ennemis moriaE = new Ennemis("Gecko Moria", "pirate/moria.gif",
-            2200,
-            60,
-            50,
-            10,
-            100);
-    Ennemis hancockE = new Ennemis("Boa Hancock", "pirate/hancock.gif",
-            1800,
-            50,
-            80,
-            10,
-            100);
-    Ennemis enelE = new Ennemis("Enel", "pirate/enel.gif",
-            3200,
-            90,
-            60,
-            10,
-            100);
-    Ennemis kaidoE = new Ennemis("Kaido", "pirate/kaido.gif",
-            4000,
             100,
-            80,
+            50,
             10,
             100);
-    Ennemis bigMomE = new Ennemis("Big Mom", "pirate/bigMom.gif",
-            3800,
-            90,
-            70,
-            10,
-            100);
+
+
+
+
 
     Description joueurD ;
     Ennemis e;
     int berryActuel = 0;
-    int victoireTotal = 0;
+    int victoireTotal1 = 49;
+
     @Override
     public void  initialize(URL url, ResourceBundle resourceBundle){
         clearAll();
@@ -393,6 +328,50 @@ public class HelloController implements Initializable {
         changeImageViewVisible(ile16, false);
         changeImageViewVisible(ile17, false);
         changeImageViewVisible(ile18, false);
+        changeImageViewVisible(ile21, false);
+        changeImageViewVisible(ile22, false);
+        changeImageViewVisible(ile23, false);
+        changeImageViewVisible(ile24, false);
+        changeImageViewVisible(ile25, false);
+        changeImageViewVisible(ile26, false);
+        changeImageViewVisible(ile27, false);
+        changeImageViewVisible(ile28, false);
+        changeImageViewVisible(ile29, false);
+        changeImageViewVisible(ile210, false);
+        changeImageViewVisible(ile31, false);
+        changeImageViewVisible(ile32, false);
+        changeImageViewVisible(ile33, false);
+        changeImageViewVisible(ile34, false);
+        changeImageViewVisible(ile35, false);
+        changeImageViewVisible(ile36, false);
+        changeImageViewVisible(ile37, false);
+        changeImageViewVisible(ile38, false);
+        changeImageViewVisible(ile39, false);
+        changeImageViewVisible(ile310, false);
+        changeImageViewVisible(ile311, false);
+        changeImageViewVisible(ile312, false);
+        changeImageViewVisible(ile313, false);
+        changeImageViewVisible(ile41, false);
+        changeImageViewVisible(ile42, false);
+        changeImageViewVisible(ile43, false);
+        changeImageViewVisible(ile44, false);
+        changeImageViewVisible(ile45, false);
+        changeImageViewVisible(ile46, false);
+        changeImageViewVisible(ile47, false);
+        changeImageViewVisible(ile48, false);
+        changeImageViewVisible(ile49, false);
+        changeImageViewVisible(ile410, false);
+        changeImageViewVisible(ile411, false);
+        changeImageViewVisible(ile51, false);
+        changeImageViewVisible(ile52, false);
+        changeImageViewVisible(ile53, false);
+        changeImageViewVisible(ile54, false);
+        changeImageViewVisible(ile55, false);
+        changeImageViewVisible(ile56, false);
+        changeImageViewVisible(ile57, false);
+        changeImageViewVisible(ile58, false);
+        changeImageViewVisible(ile59, false);
+        changeImageViewVisible(ileBoss, false);
     }
     public void changeImageViewImg(ImageView imgView, String linkImage){
         imgView.setImage(
@@ -562,7 +541,10 @@ public class HelloController implements Initializable {
             tMort.setHeaderText("DEFAITE");
             tMort.showAndWait();
             clearAll();
-            visible(mapChoixCapitaine);
+            visible(mapCarte);
+            joueurD.setVieActuelle(joueurD.getVieMax());
+            e.setVieActuelle(e.getVieMax());
+            changerVie();
             return true;
         }
         return false;
@@ -578,39 +560,211 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCarte);
             e.setVieActuelle(e.getVieMax());
-            victoireTotal += 1;
-            if(victoireTotal == 1){
+            victoireTotal1 += 1;
+            if(victoireTotal1 == 1){
                 changeImageViewVisible(ile12, true);
                 changeImageViewImg(ile11, "logo/orbeV.png");
             }
-            else if (victoireTotal == 2 ) {
+            else if (victoireTotal1 == 2 ) {
                 changeImageViewVisible(ile13, true);
                 changeImageViewImg(ile12, "logo/orbeV.png");
             }
-            else if (victoireTotal == 3 ) {
+            else if (victoireTotal1 == 3 ) {
                 changeImageViewVisible(ile14, true);
                 changeImageViewImg(ile13, "logo/orbeV.png");
             }
-            else if (victoireTotal == 4 ) {
+            else if (victoireTotal1 == 4 ) {
                 changeImageViewVisible(ile15, true);
                 changeImageViewImg(ile14, "logo/orbeV.png");
             }
-            else if (victoireTotal == 5 ) {
+            else if (victoireTotal1 == 5 ) {
                 changeImageViewVisible(ile16, true);
                 changeImageViewImg(ile15, "logo/orbeV.png");
             }
-            else if (victoireTotal == 6 ) {
+            else if (victoireTotal1 == 6 ) {
                 changeImageViewVisible(ile17, true);
                 changeImageViewImg(ile16, "logo/orbeV.png");
             }
-            else if (victoireTotal == 7 ) {
+            else if (victoireTotal1 == 7 ) {
                 changeImageViewVisible(ile18, true);
                 changeImageViewImg(ile17, "logo/orbeV.png");
             }
-            else if (victoireTotal == 8 ) {
+            else if (victoireTotal1 == 8 ) {
+                changeImageViewVisible(ile21, true);
                 changeImageViewImg(ile18, "logo/orbeV.png");
             }
+            else if (victoireTotal1 == 9 ) {
+                changeImageViewVisible(ile22, true);
+                changeImageViewImg(ile21, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 10 ) {
+                changeImageViewVisible(ile23, true);
+                changeImageViewImg(ile22, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 11 ) {
+                changeImageViewVisible(ile24, true);
+                changeImageViewImg(ile23, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 12 ) {
+                changeImageViewVisible(ile25, true);
+                changeImageViewImg(ile24, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 13 ) {
+                changeImageViewVisible(ile26, true);
+                changeImageViewImg(ile25, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 14 ) {
+                changeImageViewVisible(ile27, true);
+                changeImageViewImg(ile26, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 15 ) {
+                changeImageViewVisible(ile28, true);
+                changeImageViewImg(ile27, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 16 ) {
+                changeImageViewVisible(ile29, true);
+                changeImageViewImg(ile28, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 17 ) {
+                changeImageViewVisible(ile210, true);
+                changeImageViewImg(ile29, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 18 ) {
+                changeImageViewVisible(ile31, true);
+                changeImageViewImg(ile210, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 19 ) {
+                changeImageViewVisible(ile32, true);
+                changeImageViewImg(ile31, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 20 ) {
+                changeImageViewVisible(ile33, true);
+                changeImageViewImg(ile32, "logo/orbeV.png");
 
+            }else if (victoireTotal1 == 21 ) {
+                changeImageViewVisible(ile34, true);
+                changeImageViewImg(ile33, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 22 ) {
+                changeImageViewVisible(ile35, true);
+                changeImageViewImg(ile34, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 23 ) {
+                changeImageViewVisible(ile36, true);
+                changeImageViewImg(ile35, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 24 ) {
+                changeImageViewVisible(ile37, true);
+                changeImageViewImg(ile36, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 25 ) {
+                changeImageViewVisible(ile38, true);
+                changeImageViewImg(ile37, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 26 ) {
+                changeImageViewVisible(ile39, true);
+                changeImageViewImg(ile38, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 27 ) {
+                changeImageViewVisible(ile310, true);
+                changeImageViewImg(ile39, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 28 ) {
+                changeImageViewVisible(ile311, true);
+                changeImageViewImg(ile310, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 29 ) {
+                changeImageViewVisible(ile312, true);
+                changeImageViewImg(ile311, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 30 ) {
+                changeImageViewVisible(ile313, true);
+                changeImageViewImg(ile312, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 31 ) {
+                changeImageViewVisible(ile41, true);
+                changeImageViewImg(ile313, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 32 ) {
+                changeImageViewVisible(ile42, true);
+                changeImageViewImg(ile41, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 33 ) {
+                changeImageViewVisible(ile43, true);
+                changeImageViewImg(ile42, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 34 ) {
+                changeImageViewVisible(ile44, true);
+                changeImageViewImg(ile43, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 35 ) {
+                changeImageViewVisible(ile45, true);
+                changeImageViewImg(ile44, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 36 ) {
+                changeImageViewVisible(ile46, true);
+                changeImageViewImg(ile45, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 37 ) {
+                changeImageViewVisible(ile47, true);
+                changeImageViewImg(ile46, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 38 ) {
+                changeImageViewVisible(ile48, true);
+                changeImageViewImg(ile47, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 39 ) {
+                changeImageViewVisible(ile49, true);
+                changeImageViewImg(ile48, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 40 ) {
+                changeImageViewVisible(ile410, true);
+                changeImageViewImg(ile49, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 41 ) {
+                changeImageViewVisible(ile411, true);
+                changeImageViewImg(ile410, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 42 ) {
+                changeImageViewVisible(ile51, true);
+                changeImageViewImg(ile411, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 43 ) {
+                changeImageViewVisible(ile52, true);
+                changeImageViewImg(ile51, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 44 ) {
+                changeImageViewVisible(ile53, true);
+                changeImageViewImg(ile52, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 45 ) {
+                changeImageViewVisible(ile54, true);
+                changeImageViewImg(ile53, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 46 ) {
+                changeImageViewVisible(ile55, true);
+                changeImageViewImg(ile54, "logo/orbeV.png");
+
+            }else if (victoireTotal1 ==  47) {
+                changeImageViewVisible(ile56, true);
+                changeImageViewImg(ile55, "logo/orbeV.png");
+
+            }else if (victoireTotal1 == 48 ) {
+                changeImageViewVisible(ile57, true);
+                changeImageViewImg(ile56, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 49 ) {
+                changeImageViewVisible(ile58, true);
+                changeImageViewImg(ile57, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 50 ) {
+                changeImageViewVisible(ile59, true);
+                changeImageViewImg(ile58, "logo/orbeV.png");
+            }
+            else if (victoireTotal1 == 51 ) {
+                changeImageViewVisible(ileBoss, true);
+                changeImageViewImg(ile59, "logo/orbeV.png");
+            }
             return true;
         }
         return false;
@@ -694,6 +848,16 @@ public class HelloController implements Initializable {
         clearAll();
         visible(mapChoixCapitaine);
     }
+    @FXML
+    public void clickedRetourDes(Event event) {
+        clearAll();
+        visible(mapEquipage);
+    }
+    @FXML
+    public void clickedCapInfo(Event event) {
+        clearAll();
+        visible(mapDes);
+    }
     //////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////////    ILES      /////////////////////////////////////////////
@@ -701,9 +865,12 @@ public class HelloController implements Initializable {
     //////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////
 
+    //////////////////////
+    //////    1    ///////
+    //////////////////////
     @FXML
     public void clickedIle11(Event event) {
-        if (victoireTotal <1){
+        if (victoireTotal1 ==0){
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat13.gif");
@@ -714,7 +881,8 @@ public class HelloController implements Initializable {
     }
     @FXML
     public void clickedIle12(Event event) {
-        if (victoireTotal <2){
+        if (victoireTotal1 ==1){
+            System.out.println("oui");
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat15.gif");
@@ -725,7 +893,7 @@ public class HelloController implements Initializable {
     }
     @FXML
     public void clickedIle13(Event event) {
-        if (victoireTotal <3){
+        if (victoireTotal1 ==2){
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat1.gif");
@@ -739,7 +907,7 @@ public class HelloController implements Initializable {
 
     @FXML
     public void clickedIle14(Event event) {
-        if (victoireTotal <4){
+        if (victoireTotal1 ==3){
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat2.gif");
@@ -751,7 +919,7 @@ public class HelloController implements Initializable {
 
     @FXML
     public void clickedIle15(Event event) {
-        if (victoireTotal <5){
+        if (victoireTotal1 ==4){
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat3.gif");
@@ -763,7 +931,7 @@ public class HelloController implements Initializable {
 
     @FXML
     public void clickedIle16(Event event) {
-        if (victoireTotal <6){
+        if (victoireTotal1 ==5){
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat4.gif");
@@ -774,7 +942,7 @@ public class HelloController implements Initializable {
     }
     @FXML
     public void clickedIle17(Event event) {
-        if (victoireTotal <7){
+        if (victoireTotal1 ==6){
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat5.gif");
@@ -785,7 +953,7 @@ public class HelloController implements Initializable {
     }
     @FXML
     public void clickedIle18(Event event) {
-        if (victoireTotal <8){
+        if (victoireTotal1 ==7){
             clearAll();
             visible(mapCombat);
             changeImageViewImg(imageFond, "map/bonFondCombat11.gif");
@@ -794,17 +962,551 @@ public class HelloController implements Initializable {
             afficherEnnemis(e);
         }
     }
+    //////////////////////
+    //////    2    ///////
+    //////////////////////
 
     @FXML
-    public void clickedRetourDes(Event event) {
-        clearAll();
-        visible(mapEquipage);
+    public void clickedIle21(Event event) {
+        if (victoireTotal1 ==8){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
     }
 
+    @FXML
+    public void clickedIle22(Event event) {
+        if (victoireTotal1 ==9){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle23(Event event) {
+        if (victoireTotal1 ==10){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle24(Event event) {
+        if (victoireTotal1 ==11){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle25(Event event) {
+        if (victoireTotal1 ==12){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle26(Event event) {
+        if (victoireTotal1 ==13){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle27(Event event) {
+        if (victoireTotal1 ==14){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle28(Event event) {
+        if (victoireTotal1 ==15){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle29(Event event) {
+        if (victoireTotal1 ==16){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
 
     @FXML
-    public void clickedCapInfo(Event event) {
-        clearAll();
-        visible(mapDes);
+    public void clickedIle210(Event event) {
+        if (victoireTotal1 ==17){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    //////////////////////
+    //////    3    ///////
+    //////////////////////
+    @FXML
+    public void clickedIle31(Event event) {
+        if (victoireTotal1 ==18){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle32(Event event) {
+        if (victoireTotal1 ==19){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle33(Event event) {
+        if (victoireTotal1 ==20){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle34(Event event) {
+        if (victoireTotal1 ==21){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle35(Event event) {
+        if (victoireTotal1 ==22){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle36(Event event) {
+        if (victoireTotal1 ==23){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle37(Event event) {
+        if (victoireTotal1 ==24){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle38(Event event) {
+        if (victoireTotal1 ==25){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle39(Event event) {
+        if (victoireTotal1 ==26){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle310(Event event) {
+        if (victoireTotal1 ==27){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle311(Event event) {
+        if (victoireTotal1 ==28){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle312(Event event) {
+        if (victoireTotal1 ==29){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle313(Event event) {
+        if (victoireTotal1 ==30){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    //////////////////////
+    //////    4    ///////
+    //////////////////////
+
+    @FXML
+    public void clickedIle41(Event event) {
+        if (victoireTotal1 ==31){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle42(Event event) {
+        if (victoireTotal1 ==32){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle43(Event event) {
+        if (victoireTotal1 ==33){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle44(Event event) {
+        if (victoireTotal1 ==34){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle45(Event event) {
+        if (victoireTotal1 ==35){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle46(Event event) {
+        if (victoireTotal1 ==36){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle47(Event event) {
+        if (victoireTotal1 ==37){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle48(Event event) {
+        if (victoireTotal1 ==38){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle49(Event event) {
+        if (victoireTotal1 ==39){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle410(Event event) {
+        if (victoireTotal1 ==40){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle411(Event event) {
+        if (victoireTotal1 ==41){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    //////////////////////
+    //////    5    ///////
+    //////////////////////
+    @FXML
+    public void clickedIle51(Event event) {
+        if (victoireTotal1 ==42){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle52(Event event) {
+        if (victoireTotal1 ==43){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle53(Event event) {
+        if (victoireTotal1 ==44){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle54(Event event) {
+        if (victoireTotal1 ==45){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle55(Event event) {
+        if (victoireTotal1 ==46){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle56(Event event) {
+        if (victoireTotal1 ==47){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle57(Event event) {
+        if (victoireTotal1 ==48){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle58(Event event) {
+        if (victoireTotal1 ==49){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    @FXML
+    public void clickedIle59(Event event) {
+        if (victoireTotal1 ==50){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
+    }
+    //////////////////////
+    //////    BOSS    ///////
+    //////////////////////
+    @FXML
+    public void clickedIleBoss(Event event) {
+        if (victoireTotal1 ==51){
+            System.out.println("oui");
+            clearAll();
+            visible(mapCombat);
+            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
+            e=sentomaruE;
+            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+            afficherEnnemis(e);
+        }
     }
 }
