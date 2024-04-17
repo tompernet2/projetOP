@@ -283,7 +283,7 @@ public class HelloController implements Initializable {
             30,
             10,
             100);
-    Ennemis robinE = new Ennemis("Robin", "pirate/robinG.gif",
+    Ennemis robinE = new Ennemis("Robin", "pirate/robin.png",
             1000,
             100,
             50,
@@ -565,37 +565,6 @@ public class HelloController implements Initializable {
             50,
             10,
             100);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     Description joueurD ;
@@ -1150,42 +1119,33 @@ public class HelloController implements Initializable {
     //////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////
-
+    public void afficherMapEtEnnemis(String image, Ennemis ennemis){
+        clearAll();
+        visible(mapCombat);
+        changeImageViewImg(imageFond, image);
+        e=ennemis;
+        changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
+        afficherEnnemis(e);
+    }
     //////////////////////
     //////    1    ///////
     //////////////////////
     @FXML
     public void clickedIle11(Event event) {
         if (victoireTotal1 ==0){
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat13.gif");
-            e=cobyE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat1.gif", cobyE);
         }
     }
     @FXML
     public void clickedIle12(Event event) {
         if (victoireTotal1 ==1){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat15.gif");
-            e=smokerE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat24.gif", smokerE);
         }
     }
     @FXML
     public void clickedIle13(Event event) {
         if (victoireTotal1 ==2){
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat1.gif");
-            e=namiE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat13.gif",namiE);
         }
     }
 
@@ -1194,58 +1154,33 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedIle14(Event event) {
         if (victoireTotal1 ==3){
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat2.gif");
-            e=chopperE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat16.gif", chopperE);
         }
     }
 
     @FXML
     public void clickedIle15(Event event) {
         if (victoireTotal1 ==4){
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat3.gif");
-            e=brookE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat8.gif", brookE);
         }
     }
 
     @FXML
     public void clickedIle16(Event event) {
         if (victoireTotal1 ==5){
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat4.gif");
-            e=robinE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat9.gif", robinE);
         }
     }
     @FXML
     public void clickedIle17(Event event) {
         if (victoireTotal1 ==6){
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat5.gif");
-            e=zoroE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat2.gif", zoroE);
         }
     }
     @FXML
     public void clickedIle18(Event event) {
         if (victoireTotal1 ==7){
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat11.gif");
-            e=enerE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat11.gif",enerE);
         }
     }
     //////////////////////
@@ -1255,123 +1190,63 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedIle21(Event event) {
         if (victoireTotal1 ==8){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sentomaruE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat14.gif",sentomaruE);
         }
     }
 
     @FXML
     public void clickedIle22(Event event) {
         if (victoireTotal1 ==9){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat7.gif");
-            e=magellanE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat5.gif",magellanE);
         }
     }
     @FXML
     public void clickedIle23(Event event) {
         if (victoireTotal1 ==10){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat8.gif");
-            e=kakuE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat13.gif",kakuE);
         }
     }
     @FXML
     public void clickedIle24(Event event) {
         if (victoireTotal1 ==11){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat9.gif");
-            e=lucciE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat9.gif",lucciE);
         }
     }
     @FXML
     public void clickedIle25(Event event) {
         if (victoireTotal1 ==12){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat10.gif");
-            e=fujitoraE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat10.gif",fujitoraE);
         }
     }
     @FXML
     public void clickedIle26(Event event) {
         if (victoireTotal1 ==13){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat11.gif");
-            e=kizaruE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat12.gif",kizaruE);
         }
     }
     @FXML
     public void clickedIle27(Event event) {
         if (victoireTotal1 ==14){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat12.gif");
-            e=aokijiE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat16.gif",aokijiE);
         }
     }
     @FXML
     public void clickedIle28(Event event) {
         if (victoireTotal1 ==15){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat13.gif");
-            e=akainuE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat3.gif",akainuE);
         }
     }
     @FXML
     public void clickedIle29(Event event) {
         if (victoireTotal1 ==16){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat14.gif");
-            e=garpE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat24.gif",garpE);
         }
     }
 
     @FXML
     public void clickedIle210(Event event) {
         if (victoireTotal1 ==17){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat15.gif");
-            e=sengokuE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat14.gif",sengokuE);
         }
     }
     //////////////////////
@@ -1380,157 +1255,79 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedIle31(Event event) {
         if (victoireTotal1 ==18){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat1.gif");
-            e=foxyE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat15.gif",foxyE);
         }
     }
     @FXML
     public void clickedIle32(Event event) {
         if (victoireTotal1 ==19){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat2.gif");
-            e=morganE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat13.gif",morganE);
         }
     }
     @FXML
     public void clickedIle33(Event event) {
         if (victoireTotal1 ==20){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat3.gif");
-            e=monetE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat16.gif",monetE);
         }
     }
     @FXML
     public void clickedIle34(Event event) {
         if (victoireTotal1 ==21){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat4.gif");
-            e=cesarE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat6.gif",cesarE);
         }
     }
     @FXML
     public void clickedIle35(Event event) {
         if (victoireTotal1 ==22){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat5.gif");
-            e=giantE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat17.gif",giantE);
         }
     }
     @FXML
     public void clickedIle36(Event event) {
         if (victoireTotal1 ==23){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=trebolE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat1.gif",trebolE);
         }
     }
     @FXML
     public void clickedIle37(Event event) {
         if (victoireTotal1 ==24){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat7.gif");
-            e=deflamingoE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat23.gif",deflamingoE);
         }
     }
     @FXML
     public void clickedIle38(Event event) {
         if (victoireTotal1 ==25){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat8.gif");
-            e=jinbeE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat9.gif",jinbeE);
         }
     }
     @FXML
     public void clickedIle39(Event event) {
         if (victoireTotal1 ==26){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat9.gif");
-            e=moriaE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat8.gif",moriaE);
         }
     }
     @FXML
     public void clickedIle310(Event event) {
         if (victoireTotal1 ==27){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat10.gif");
-            e=marcoE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat11.gif",marcoE);
         }
     }
     @FXML
     public void clickedIle311(Event event) {
         if (victoireTotal1 ==28){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat11.gif");
-            e=mihawkE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat7.gif",mihawkE);
         }
     }
     @FXML
     public void clickedIle312(Event event) {
         if (victoireTotal1 ==29){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat12.gif");
-            e=shanksE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat23.gif",shanksE);
         }
     }
     @FXML
     public void clickedIle313(Event event) {
         if (victoireTotal1 ==30){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat13.gif");
-            e=shikiE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat4.gif",shikiE);
         }
     }
     //////////////////////
@@ -1540,133 +1337,67 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedIle41(Event event) {
         if (victoireTotal1 ==31){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=orochiE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat13.gif",orochiE);
         }
     }
     @FXML
     public void clickedIle42(Event event) {
         if (victoireTotal1 ==32){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=whoE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat15.gif",whoE);
         }
     }
     @FXML
     public void clickedIle43(Event event) {
         if (victoireTotal1 ==33){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=drakeE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat18.gif",drakeE);
         }
     }
     @FXML
     public void clickedIle44(Event event) {
         if (victoireTotal1 ==34){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=sasakiE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat12.gif",sasakiE);
         }
     }
     @FXML
     public void clickedIle45(Event event) {
         if (victoireTotal1 ==35){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=blackmariaE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat19.gif",blackmariaE);
         }
     }
     @FXML
     public void clickedIle46(Event event) {
         if (victoireTotal1 ==36){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=yamatoE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat4.gif",yamatoE);
         }
     }
     @FXML
     public void clickedIle47(Event event) {
         if (victoireTotal1 ==37){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=jackE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat6.gif",jackE);
         }
     }
     @FXML
     public void clickedIle48(Event event) {
         if (victoireTotal1 ==38){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=queenE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat15.gif",queenE);
         }
     }
     @FXML
     public void clickedIle49(Event event) {
         if (victoireTotal1 ==39){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=kingE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat23.gif",kingE);
         }
     }
     @FXML
     public void clickedIle410(Event event) {
         if (victoireTotal1 ==40){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=bigmomE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat17.gif",bigmomE);
         }
     }
     @FXML
     public void clickedIle411(Event event) {
         if (victoireTotal1 ==41){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=kaidoE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat21.gif",kaidoE);
         }
     }
     //////////////////////
@@ -1675,109 +1406,55 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedIle51(Event event) {
         if (victoireTotal1 ==42){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=vascoE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat2.gif",vascoE);
         }
     }
     @FXML
     public void clickedIle52(Event event) {
         if (victoireTotal1 ==43){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=pizarroE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat19.gif",pizarroE);
         }
     }
     @FXML
     public void clickedIle53(Event event) {
         if (victoireTotal1 ==44){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=wasatsumiE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat10.gif",wasatsumiE);
         }
     }
     @FXML
     public void clickedIle54(Event event) {
         if (victoireTotal1 ==45){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=augurE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat18.gif",augurE);
         }
     }
     @FXML
     public void clickedIle55(Event event) {
         if (victoireTotal1 ==46){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=devonE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat15.gif",devonE);
         }
     }
     @FXML
     public void clickedIle56(Event event) {
         if (victoireTotal1 ==47){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=burgessE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat14.gif",burgessE);
         }
     }
     @FXML
     public void clickedIle57(Event event) {
         if (victoireTotal1 ==48){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=teachE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat12.gif",teachE);
         }
     }
     @FXML
     public void clickedIle58(Event event) {
         if (victoireTotal1 ==49){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=vegapunkE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat18.gif",vegapunkE);
         }
     }
     @FXML
     public void clickedIle59(Event event) {
         if (victoireTotal1 ==50){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=doyensE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat4.gif",doyensE);
         }
     }
     //////////////////////
@@ -1786,13 +1463,7 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedIleBoss(Event event) {
         if (victoireTotal1 ==51){
-            System.out.println("oui");
-            clearAll();
-            visible(mapCombat);
-            changeImageViewImg(imageFond, "map/bonFondCombat6.gif");
-            e=imuE;
-            changeImageViewImg(imageEnnemis, "personnages/"+e.getImage() );
-            afficherEnnemis(e);
+            afficherMapEtEnnemis("map/bonFondCombat20.gif",imuE);
         }
     }
 }
