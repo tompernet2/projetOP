@@ -217,7 +217,7 @@ public class HelloController implements Initializable {
 
     Description luffyD = new Description("Luffy", "pirate/luffy.gif",
             5000,
-            2000,
+            200,
             200,
             50);
     Description kiddD = new Description("Kidd",
@@ -256,315 +256,333 @@ public class HelloController implements Initializable {
     Ennemis cobyE = new Ennemis("Coby", "pirate/coby.gif",
             1500,
             100,
-            70,
+            50,
             10,
             100);
     Ennemis smokerE = new Ennemis("Smoker", "pirate/smoker.gif",
             2000,
-            70,
-            30,
+            150,
+            80,
             10,
-            100);
+            200);
     Ennemis namiE = new Ennemis("Nami", "pirate/nami.gif",
-            2000,
-            70,
-            30,
+            2500,
+            200,
+            100,
             10,
-            100);
+            300);
     Ennemis chopperE = new Ennemis("Chopper", "pirate/chopper.gif",
-            2000,
-            70,
-            30,
+            3000,
+            250,
+            150,
             10,
-            100);
+            350);
     Ennemis brookE = new Ennemis("Brook", "pirate/brook.gif",
-            2000,
-            70,
-            30,
+            3500,
+            250,
+            500,
             10,
-            100);
+            400);
     Ennemis robinE = new Ennemis("Robin", "pirate/robin.png",
-            1000,
-            100,
-            50,
+            4000,
+            250,
+            300,
             10,
-            100);
+            450);
     Ennemis zoroE = new Ennemis("Zoro", "pirate/zoro.gif",
-            1000,
-            100,
-            50,
+            4500,
+            300,
+            500,
             10,
-            100);
+            500);
     Ennemis enerE = new Ennemis("Ener", "pirate/ener.gif",
+            5000,
+            350,
             1000,
-            100,
-            50,
             10,
-            100);
+            600);
+
+
+
+
     Ennemis sentomaruE = new Ennemis("Sentomaru", "pirate/sentomaru.gif",
+            4000,
+            300,
             1000,
-            100,
-            50,
             10,
-            100);
+            600);
     Ennemis magellanE = new Ennemis("Magellan", "pirate/magellan.gif",
-            1000,
-            100,
-            50,
+            4500,
+            300,
+            1100,
             10,
-            100);
+            650);
     Ennemis kakuE = new Ennemis("Kaku", "pirate/kaku.gif",
-            1000,
-            100,
-            50,
+            5000,
+            350,
+            1200,
             10,
-            100);
+            700);
     Ennemis lucciE = new Ennemis("Lucci", "pirate/lucci.gif",
-            1000,
-            100,
-            50,
+            6000,
+            400,
+            1400,
             10,
-            100);
+            750);
     Ennemis fujitoraE = new Ennemis("Fujitora", "pirate/fujitora.png",
-            1000,
-            100,
-            50,
+            5500,
+            400,
+            1200,
             10,
-            100);
+            800);
     Ennemis kizaruE = new Ennemis("Kirzaru", "pirate/kizaru.gif",
-            1000,
-            100,
-            50,
+            5500,
+            450,
+            10000,
             10,
-            100);
+            800);
     Ennemis aokijiE = new Ennemis("Aokiji", "pirate/aokiji.gif",
-            1000,
-            100,
-            50,
+            55000,
+            500,
+            1300,
             10,
-            100);
+            800);
     Ennemis akainuE = new Ennemis("Akainu", "pirate/akainu.gif",
-            1000,
-            100,
-            50,
+            7000,
+            550,
+            1500,
             10,
-            100);
+            1000);
     Ennemis garpE = new Ennemis("Garp", "pirate/garp.gif",
-            1000,
-            100,
-            50,
+            7000,
+            600,
+            2000,
             10,
-            100);
+            1100);
     Ennemis sengokuE = new Ennemis("Sengoku", "pirate/sengoku.gif",
-            1000,
-            100,
-            50,
+            8000,
+            700,
+            2500,
             10,
-            100);
+            1200);
+
+
+
+
+
     Ennemis foxyE = new Ennemis("Foxy", "pirate/foxy.gif",
-            1000,
-            100,
-            50,
+            500,
             10,
-            100);
+            0,
+            10,
+            1);
     Ennemis morganE = new Ennemis("Morgan", "pirate/morgan.png",
+            3000,
             1000,
-            100,
-            50,
+            800,
             10,
-            100);
+            400);
     Ennemis monetE = new Ennemis("Monet", "pirate/monet.png",
+            4000,
+            1200,
             1000,
-            100,
-            50,
             10,
-            100);
+            500);
     Ennemis cesarE = new Ennemis("César", "pirate/cesar.png",
-            1000,
-            100,
-            50,
+            5000,
+            1100,
+            1500,
             10,
-            100);
+            1000);
     Ennemis giantE = new Ennemis("Géant", "pirate/geant.png",
-            1000,
-            100,
-            50,
+            6000,
+            2000,
+            2000,
             10,
-            100);
+            1100);
     Ennemis trebolE = new Ennemis("Trébol", "pirate/trebol.png",
-            1000,
-            100,
-            50,
+            5000,
+            1500,
+            1500,
             10,
-            100);
-    Ennemis deflamingoE = new Ennemis("Doflamingo", "pirate/doflamingo.gif",
-            1000,
-            100,
-            50,
+            1200);
+    Ennemis doflamingoE = new Ennemis("Doflamingo", "pirate/doflamingo.gif",
+            10000,
+            3000,
+            2000,
             10,
-            100);
+            1400);
     Ennemis jinbeE = new Ennemis("Jinbe", "pirate/jinbei.gif",
-            1000,
-            100,
-            50,
+            8000,
+            2000,
+            3000,
             10,
-            100);
+            1400);
     Ennemis moriaE = new Ennemis("Moria", "pirate/moria.gif",
-            1000,
-            100,
-            50,
+            7000,
+            2000,
+            4000,
             10,
-            100);
+            1400);
     Ennemis marcoE = new Ennemis("Marco", "pirate/marco.gif",
-            1000,
-            100,
-            50,
+            10000,
+            4000,
+            7000,
             10,
-            100);
+            1500);
     Ennemis mihawkE = new Ennemis("Mihawk", "pirate/mihawk.gif",
-            1000,
-            100,
-            50,
+            10000,
+            5000,
+            5000,
             10,
-            100);
+            1800);
     Ennemis shanksE = new Ennemis("Shanks", "pirate/shanks.gif",
-            1000,
-            100,
-            50,
+            10000,
+            10000,
+            10000,
             10,
-            100);
+            2000);
     Ennemis shikiE = new Ennemis("Shiki", "pirate/shiki.gif",
-            1000,
-            100,
-            50,
+            11000,
+            11000,
+            11000,
             10,
-            100);
+            2500);
+
+
+
+
     Ennemis orochiE = new Ennemis("Orochi", "pirate/orochi.png",
-            1000,
-            100,
-            50,
+            11000,
+            10000,
+            10000,
             10,
-            100);
+            1000);
     Ennemis whoE = new Ennemis("Who's who", "pirate/who.png",
-            1000,
-            100,
-            50,
+            11000,
+            10000,
+            10000,
             10,
-            100);
+            1000);
     Ennemis drakeE = new Ennemis("X-Drake", "pirate/drake.png",
-            1000,
-            100,
-            50,
+            11000,
+            10000,
+            10000,
             10,
-            100);
+            1000);
     Ennemis sasakiE = new Ennemis("Sasaki", "pirate/sasaki.png",
-            1000,
-            100,
-            50,
+            11000,
+            10000,
+            10000,
             10,
-            100);
+            1000);
     Ennemis blackmariaE = new Ennemis("Black Maria", "pirate/blackMaria.png",
-            1000,
-            100,
-            50,
+            13000,
+            12000,
+            14000,
             10,
-            100);
+            1500);
     Ennemis yamatoE = new Ennemis("Yamato", "pirate/yamato.png",
-            1000,
-            100,
-            50,
+            15000,
+            15000,
+            15000,
             10,
-            100);
+            3000);
     Ennemis jackE = new Ennemis("Jack", "pirate/jack.png",
-            1000,
-            100,
-            50,
+            14000,
+            14000,
+            14000,
             10,
-            100);
+            4000);
     Ennemis queenE = new Ennemis("Queen", "pirate/queen.png",
-            1000,
-            100,
-            50,
+            15000,
+            15000,
+            18000,
             10,
-            100);
+            4000);
     Ennemis kingE = new Ennemis("King", "pirate/king.png",
-            1000,
-            100,
-            50,
+            18000,
+            18000,
+            18000,
             10,
-            100);
+            5000);
     Ennemis bigmomE = new Ennemis("Bigmom", "pirate/bigmom.png",
-            1000,
-            100,
-            50,
+            19000,
+            17000,
+            19000,
             10,
-            100);
+            7000);
     Ennemis kaidoE = new Ennemis("Kaido", "pirate/kaido.png",
-            1000,
-            100,
-            50,
+            20000,
+            20000,
+            20000,
             10,
-            100);
+            10000);
+
+
+
     Ennemis vascoE = new Ennemis("Vasco Shot", "pirate/vasco.png",
-            1000,
-            100,
-            50,
+            18000,
+            18000,
+            18000,
             10,
-            100);
+            7000);
     Ennemis pizarroE = new Ennemis("Pizarro", "pirate/pizarro.png",
-            1000,
-            100,
-            50,
+            18000,
+            18000,
+            18000,
             10,
-            100);
+            8000);
     Ennemis wasatsumiE = new Ennemis("Wadatsumi", "pirate/wadatsumi.png",
-            1000,
-            100,
-            50,
+            18000,
+            18000,
+            18000,
             10,
-            100);
+            7000);
     Ennemis augurE = new Ennemis("Van augur", "pirate/augur.png",
-            1000,
-            100,
-            50,
+            20000,
+            20000,
+            20000,
             10,
-            100);
+            8000);
     Ennemis devonE = new Ennemis("Devon", "pirate/devon.png",
-            1000,
-            100,
-            50,
+            20000,
+            20000,
+            20000,
             10,
-            100);
+            9000);
     Ennemis burgessE = new Ennemis("Burgess", "pirate/burgess.png",
-            1000,
-            100,
-            50,
+            20000,
+            20000,
+            20000,
             10,
-            100);
+            10000);
     Ennemis teachE = new Ennemis("Teach", "pirate/barbeNoir.gif",
-            1000,
-            100,
-            50,
+            30000,
+            30000,
+            30000,
             10,
-            100);
+            15000);
     Ennemis vegapunkE = new Ennemis("Vegapunk", "pirate/vegapunk.png",
-            1000,
-            100,
-            50,
+            40000,
+            40000,
+            40000,
             10,
-            100);
+            100000);
     Ennemis doyensE = new Ennemis("Les 5 doyens", "pirate/5doyen.png",
-            1000,
-            100,
-            50,
+            100000,
+            100000,
+            100000,
             10,
-            100);
+            100000000);
+
+
     Ennemis imuE = new Ennemis("IMU", "pirate/imu.png",
-            1000,
-            100,
-            50,
+            1000000,
+            1000000,
+            1000000,
             10,
-            100);
+            100000000);
 
 
     Description joueurD ;
@@ -1291,7 +1309,7 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedIle37(Event event) {
         if (victoireTotal1 ==24){
-            afficherMapEtEnnemis("map/bonFondCombat23.gif",deflamingoE);
+            afficherMapEtEnnemis("map/bonFondCombat23.gif",doflamingoE);
         }
     }
     @FXML
