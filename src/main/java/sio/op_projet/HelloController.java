@@ -204,6 +204,14 @@ public class HelloController implements Initializable {
     private ImageView ile312;
     @FXML
     private ImageView ileBoss;
+    @FXML
+    private Label lblBerryTot;
+    @FXML
+    private Label lblBerryAjout;
+    @FXML
+    private AnchorPane mapWin;
+    @FXML
+    private AnchorPane mapLose;
 
     public void invisible(AnchorPane apCourante) {apCourante.setVisible(false);return;}
     public void visible(AnchorPane apCourante){apCourante.setVisible(true);return;}
@@ -243,10 +251,23 @@ public class HelloController implements Initializable {
             60);
     Description crocodileD = new Description("Crocodile",
             "pirate/crocodile.gif",
-            10,
+            4000,
             200,
             10,
             100);
+    Description aceD = new Description("Ace",
+            "pirate/ace.gif",
+            3000,
+            200,
+            200,
+            50);
+    Description frankyD = new Description("Franky",
+            "pirate/franky.gif",
+            4500,
+            200,
+            100,
+            70);
+
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////           ENNEMIS          ///////////////////////////////////////////
@@ -657,7 +678,6 @@ public class HelloController implements Initializable {
     }
     public void changeImageViewVisible(ImageView imageView, boolean visible) {
         if (visible) {
-            // Rendre l'imageView visible en chargeant une image
             imageView.setImage(
                     new Image(
                             getClass().getResource(
@@ -666,7 +686,6 @@ public class HelloController implements Initializable {
                     )
             );
         } else {
-            // Rendre l'imageView invisible en chargeant une image vide
             imageView.setImage(null);
         }
     }
@@ -680,6 +699,8 @@ public class HelloController implements Initializable {
         invisible(mapCombat);
         invisible(mapChoixCapitaine);
         invisible(mapDes);
+        invisible(mapWin);
+        invisible(mapLose);
     }
 
     @FXML
@@ -732,6 +753,7 @@ public class HelloController implements Initializable {
     public void changerVie(){
         changerText(lblVieActuelleP, joueurD.getVieActuelle());
         changerText(lblVieActuelleE, e.getVieActuelle());
+        lblVieD.setText(String.valueOf(joueurD.getVieActuelle()));
     }
     public void changerBerry(){
         changerText(lblBerry1, berryActuel);
@@ -809,12 +831,8 @@ public class HelloController implements Initializable {
     }
     public boolean mort(){
         if (joueurD.getVieActuelle()<=0){
-            Alert tMort = new Alert(Alert.AlertType.INFORMATION);
-            tMort.setContentText("Tu es mort !");
-            tMort.setHeaderText("DEFAITE");
-            tMort.showAndWait();
             clearAll();
-            visible(mapCarte);
+            visible(mapLose);
             joueurD.setVieActuelle(joueurD.getVieMax());
             e.setVieActuelle(e.getVieMax());
             changerVie();
@@ -826,12 +844,10 @@ public class HelloController implements Initializable {
     public boolean mortE(){
         if (e.getVieActuelle()<=0){
             ajoutBerry(e.getBerryE());
-            Alert victoire = new Alert(Alert.AlertType.INFORMATION);
-            victoire.setContentText("Tu as gagné!!!");
-            victoire.setHeaderText("VICTOIRE");
-            victoire.showAndWait();
             clearAll();
-            visible(mapCarte);
+            visible(mapWin);
+            lblBerryTot.setText(String.valueOf(berryActuel));
+            lblBerryAjout.setText(String.valueOf(e.getBerryE()));
             e.setVieActuelle(e.getVieMax());
             victoireTotal1 += 1;
             if(victoireTotal1 == 1){
@@ -1081,6 +1097,17 @@ public class HelloController implements Initializable {
         afficherPersonnage(crocodileD);
         joueurD = crocodileD;
     }
+    @FXML
+    public void clickedChoixFranky(Event event) {
+        afficherPersonnage(frankyD);
+        joueurD = frankyD;
+    }
+
+    @FXML
+    public void clickedChoixAce(Event event) {
+        afficherPersonnage(aceD);
+        joueurD =aceD;
+    }
 
     @FXML
     public void clickedChoixCap(Event event) {
@@ -1110,7 +1137,7 @@ public class HelloController implements Initializable {
         nomPerso.setText(description.getNom());
         lblVieActuelleP.setText(String.valueOf(description.getVieActuelle()));
         lblVieMaxP.setText(String.valueOf(description.getVieMax()));
-        lblVieD.setText(String.valueOf(description.getVieMax()));
+        lblVieD.setText(String.valueOf(description.getVieActuelle()));
         lblAttaqueD.setText(String.valueOf(description.getAttaque()));
         lblDefenseD.setText(String.valueOf(description.getDefense()));
         lblFuiteD.setText(String.valueOf(description.getFuite()));
@@ -1484,4 +1511,17 @@ public class HelloController implements Initializable {
             afficherMapEtEnnemis("map/bonFondCombat20.gif",imuE);
         }
     }
+
+    @FXML
+    public void clickedContinue(Event event) {
+        clearAll();
+        visible(mapCarte);
+    }
+
+    @FXML
+    public void clickedLose(Event event) {
+        clearAll();
+        visible(mapDebut);
+    }
+
 }

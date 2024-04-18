@@ -16,7 +16,7 @@
                   <Image url="@../../projetOP/map/ciel.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="btnStart1" fitHeight="282.0" fitWidth="966.0" layoutX="250.0" layoutY="240.0" onMouseClicked="#clickedStart1" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btnStart1" fitHeight="282.0" fitWidth="966.0" layoutX="244.0" layoutY="270.0" onMouseClicked="#clickedStart1" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../projetOP/logo/onepiece.png" />
                </image>
@@ -30,9 +30,9 @@
                   <Image url="@../../projetOP/map/papierVieuP.jpg" />
                </image>
             </ImageView>
-            <ScrollPane layoutX="135.0" layoutY="156.0" prefHeight="627.0" prefWidth="422.0">
+            <ScrollPane layoutX="135.0" layoutY="100.0" prefHeight="657.0" prefWidth="422.0">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="622.0" prefWidth="406.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="826.0" prefWidth="406.0">
                      <children>
                         <ImageView fx:id="choixRoger" fitHeight="211.0" fitWidth="222.0" layoutX="208.0" layoutY="208.0" onMouseClicked="#clickedChoixLaw" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -64,6 +64,16 @@
                               <Image url="@../../projetOP/personnages/selection/crocodile.png" />
                            </image>
                         </ImageView>
+                        <ImageView fitHeight="208.0" fitWidth="232.0" layoutY="630.0" onMouseClicked="#clickedChoixAce" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../projetOP/personnages/selection/ace.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="199.0" fitWidth="209.0" layoutX="208.0" layoutY="630.0" onMouseClicked="#clickedChoixFranky" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../projetOP/personnages/selection/franky.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
               </content>
@@ -79,11 +89,6 @@
                   <Font size="60.0" />
                </font>
             </Label>
-            <ImageView fitHeight="509.0" fitWidth="693.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../projetOP/logo/choixCap.png" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="69.0" fitWidth="84.0" layoutX="604.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -643,6 +648,59 @@
                   <Font size="50.0" />
                </font>
             </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mapWin" prefHeight="800.0" prefWidth="1281.0" visible="false">
+         <children>
+            <ImageView fitHeight="921.0" fitWidth="1283.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../projetOP/map/papierVieu.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="422.0" fitWidth="599.0" layoutX="342.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../projetOP/logo/trophé.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblBerryTot" alignment="TOP_LEFT" layoutX="302.0" layoutY="491.0" prefHeight="39.0" prefWidth="315.0">
+               <font>
+                  <Font size="80.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="56.0" layoutX="232.0" layoutY="506.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../projetOP/logo/berry.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblBerryAjout" layoutX="319.0" layoutY="428.0" prefHeight="82.0" prefWidth="315.0" textFill="#666666">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Label layoutX="294.0" layoutY="433.0" text="+" textFill="#666666">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="254.0" fitWidth="484.0" layoutX="757.0" layoutY="422.0" onMouseClicked="#clickedContinue" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../projetOP/logo/continue.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mapLose" prefHeight="800.0" prefWidth="1281.0" visible="false">
+         <children>
+            <ImageView fitHeight="862.0" fitWidth="1283.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../projetOP/map/papierVieu.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="484.0" fitWidth="828.0" layoutX="230.0" layoutY="144.0" onMouseClicked="#clickedLose" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../projetOP/logo/gameOver.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>
