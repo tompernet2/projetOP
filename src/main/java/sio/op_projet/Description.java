@@ -48,7 +48,18 @@ public class Description {
         }
         return att;
     }
-
+    public void acheterVie(){
+        this.vieMax = (int) (this.vieMax +100);
+    }
+    public void acheterAttaque(){
+        this.attaque = (int) (this.attaque +100);
+    }
+    public void acheterDefense(){
+        this.defense = (int) (this.defense +100);
+    }
+    public void acheterFuite(){
+        this.fuite = (int) (this.fuite +5);
+    }
     public void setVieMax(int vieMax) {
         this.vieMax = vieMax;
     }

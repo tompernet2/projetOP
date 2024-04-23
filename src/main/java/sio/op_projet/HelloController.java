@@ -12,10 +12,13 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import org.w3c.dom.ls.LSOutput;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class HelloController implements Initializable {
 
@@ -212,6 +215,20 @@ public class HelloController implements Initializable {
     private AnchorPane mapWin;
     @FXML
     private AnchorPane mapLose;
+    @FXML
+    private Label lblBerryRetirer;
+    @FXML
+    private Label lblBerryTot1;
+    @FXML
+    private Label lblBerry3;
+    @FXML
+    private ImageView animationDefPersonnage;
+    @FXML
+    private ImageView animationAttPersonnage;
+    @FXML
+    private ImageView animationAttEnnemi;
+    @FXML
+    private ImageView animationDefEnnemi;
 
     public void invisible(AnchorPane apCourante) {apCourante.setVisible(false);return;}
     public void visible(AnchorPane apCourante){apCourante.setVisible(true);return;}
@@ -224,10 +241,10 @@ public class HelloController implements Initializable {
 
 
     Description luffyD = new Description("Luffy", "pirate/luffy.gif",
-            5000,
-            200,
-            200,
-            50);
+            1000,
+            100,
+            10,
+            0);
     Description kiddD = new Description("Kidd",
             "pirate/kid.gif",
             4000,
@@ -608,7 +625,7 @@ public class HelloController implements Initializable {
 
     Description joueurD ;
     Ennemis e;
-    int berryActuel = 0;
+    int berryActuel = 1000000;
     int victoireTotal1 = 0;
 
     @Override
@@ -711,6 +728,7 @@ public class HelloController implements Initializable {
         afficherPersonnage(luffyD);
         lblBerry1.setText(String.valueOf(berryActuel));
         lblBerry2.setText(String.valueOf(berryActuel));
+        lblBerry3.setText(String.valueOf(berryActuel));
     }
 
     @FXML
@@ -750,7 +768,7 @@ public class HelloController implements Initializable {
     public void changerText(Label lblTexte, int intTexte){
         lblTexte.setText(Integer.toString(intTexte));
     }
-    public void changerVie(){
+    public void changerVieCombat(){
         changerText(lblVieActuelleP, joueurD.getVieActuelle());
         changerText(lblVieActuelleE, e.getVieActuelle());
         lblVieD.setText(String.valueOf(joueurD.getVieActuelle()));
@@ -758,13 +776,74 @@ public class HelloController implements Initializable {
     public void changerBerry(){
         changerText(lblBerry1, berryActuel);
         changerText(lblBerry2, berryActuel);
+        changerText(lblBerry3, berryActuel);
     }
     public void ajoutBerry(int berry){
         berryActuel = berryActuel + berry;
         changerBerry();
     }
+    public void impactGIF(ImageView imageView, String image){
+        changeImageViewImg(imageView, image);
+        imageView.setVisible(true);
+        Timer chrono = new Timer();
+        chrono.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                imageView.setVisible(false);
+            }
+        }, 400);
+    }
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////                    Amelioration           /////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////
 
+    @FXML
+    public void clickedPlusVie(Event event) {
+        if(berryActuel>=100){
+            berryActuel= berryActuel-100;
+            changerBerry();
+            joueurD.acheterVie();
+            joueurD.setVieMax(joueurD.getVieMax());
+            changerText(lblVieD, joueurD.getVieMax());
+            changerText(lblVieActuelleP,joueurD.getVieMax());
+            changerText(lblVieMaxP,joueurD.getVieMax());
+        }
+    }
+
+    @FXML
+    public void clickedPlusAttaque(Event event) {
+        if(berryActuel>=100){
+            berryActuel= berryActuel-100;
+            changerBerry();
+            joueurD.acheterAttaque();
+            changerText(lblAttaqueD, joueurD.getAttaque());
+        }
+    }
+
+    @FXML
+    public void clickedPlusDefense(Event event) {
+        if(berryActuel>=100){
+            berryActuel= berryActuel-100;
+            changerBerry();
+            joueurD.acheterDefense();
+            changerText(lblDefenseD, joueurD.getDefense());
+        }
+    }
+
+    @FXML
+    public void clickedPlusFuite(Event event) {
+        if (joueurD.getFuite() <100) {
+            if (berryActuel >= 100) {
+                berryActuel = berryActuel - 100;
+                changerBerry();
+                joueurD.acheterFuite();
+                changerText(lblFuiteD, joueurD.getFuite());
+            }
+        }
+    }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////////////
@@ -773,42 +852,51 @@ public class HelloController implements Initializable {
     /////////////////////////////////////////////////////////////////////////////////////////
 
 
-
-
     @FXML
     public void clickedAttaque(Event event) {
+        System.out.println("Degat :"+ joueurD.getAttaque());
         int auPif = alea();
         if (auPif<50){
             joueurD.vie(e.attaqueE());
             System.out.println("Ennemi Attaque");
+            impactGIF(animationAttPersonnage, "logo/impact2.gif");
         }
         else {
             e.defenseE(joueurD.attaque());
             System.out.println("Ennemie Defend");
+            impactGIF(animationDefEnnemi,"logo/bouclier.gif" );
+
         }
         e.vieE(joueurD.attaque());
-        changerVie();
+        impactGIF(animationAttEnnemi, "logo/impact2.gif");
+        changerVieCombat();
         mort();
         mortE();
     }
 
     @FXML
     public void clickedDefense(Event event) {
+        System.out.println("Defense : "+ joueurD.getDefense());
         int auPif = alea();
         if (auPif<50){
             joueurD.defense(e.attaqueE());
             System.out.println("Ennemi Attaque mais degat divisé");
+            impactGIF(animationAttPersonnage, "logo/impact2.gif");
+
         }
         else {
             System.out.println("Ennemie Defend donc rien ne se passe");
+            impactGIF(animationDefEnnemi, "logo/bouclier.gif");
         }
-        changerVie();
+        impactGIF(animationDefPersonnage, "logo/bouclier.gif");
+        changerVieCombat();
         mort();
         mortE();
     }
 
     @FXML
     public void clickedFuite(Event event) {
+        System.out.println("Fuite :"+ joueurD.getFuite());
         if(joueurD.fuite() == true){
             Alert taFuit = new Alert(Alert.AlertType.INFORMATION);
             taFuit.setContentText("Tu as fuit !");
@@ -825,7 +913,7 @@ public class HelloController implements Initializable {
                 System.out.println("Ennemie Defend");
             }
         }
-        changerVie();
+        changerVieCombat();
         mort();
         mortE();
     }
@@ -835,17 +923,28 @@ public class HelloController implements Initializable {
             visible(mapLose);
             joueurD.setVieActuelle(joueurD.getVieMax());
             e.setVieActuelle(e.getVieMax());
-            changerVie();
+            changerVieCombat();
+            retirerBerry();
+            changerBerry();
+            lblBerryTot1.setText(String.valueOf(berryActuel));
+            lblBerryRetirer.setText(String.valueOf(e.getBerryE()));
             return true;
         }
         return false;
     }
-
+    public void retirerBerry(){
+        berryActuel = berryActuel - e.getBerryE();
+        if (berryActuel < 0){
+            berryActuel = 0;
+        }
+    }
     public boolean mortE(){
         if (e.getVieActuelle()<=0){
             ajoutBerry(e.getBerryE());
             clearAll();
             visible(mapWin);
+            joueurD.setVieActuelle(joueurD.getVieMax());
+            changerVieCombat();
             lblBerryTot.setText(String.valueOf(berryActuel));
             lblBerryAjout.setText(String.valueOf(e.getBerryE()));
             e.setVieActuelle(e.getVieMax());
@@ -1057,6 +1156,17 @@ public class HelloController implements Initializable {
             return true;
         }
         return false;
+    }
+    @FXML
+    public void clickedContinue(Event event) {
+        clearAll();
+        visible(mapCarte);
+    }
+
+    @FXML
+    public void clickedLose(Event event) {
+        clearAll();
+        visible(mapDebut);
     }
 
 
@@ -1512,16 +1622,5 @@ public class HelloController implements Initializable {
         }
     }
 
-    @FXML
-    public void clickedContinue(Event event) {
-        clearAll();
-        visible(mapCarte);
-    }
-
-    @FXML
-    public void clickedLose(Event event) {
-        clearAll();
-        visible(mapDebut);
-    }
 
 }
