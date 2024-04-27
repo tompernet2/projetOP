@@ -166,7 +166,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="mapEquipage" layoutX="-3.0" prefHeight="806.0" prefWidth="1288.0" visible="false">
+      <AnchorPane fx:id="mapEquipage" layoutX="-3.0" prefHeight="806.0" prefWidth="1288.0">
          <children>
             <ImageView fitHeight="862.0" fitWidth="1289.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -331,6 +331,11 @@
                   <Image url="@../../projetOP/logo/berry.png" />
                </image>
             </ImageView>
+            <Label fx:id="lblPrixVie" layoutX="1099.0" layoutY="182.0" prefHeight="55.0" prefWidth="108.0" text="Label">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="mapCarte" prefHeight="800.0" prefWidth="1282.0" visible="false">
@@ -617,7 +622,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="mapCombat" prefHeight="806.0" prefWidth="1282.0">
+      <AnchorPane fx:id="mapCombat" prefHeight="806.0" prefWidth="1282.0" visible="false">
          <children>
             <ImageView fitHeight="862.0" fitWidth="1281.0" pickOnBounds="true" preserveRatio="true">
                <image>

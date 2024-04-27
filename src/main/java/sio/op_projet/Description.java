@@ -49,13 +49,13 @@ public class Description {
         return att;
     }
     public void acheterVie(){
-        this.vieMax = (int) (this.vieMax +100);
+        this.vieMax = (int) (this.vieMax +500);
     }
     public void acheterAttaque(){
-        this.attaque = (int) (this.attaque +100);
+        this.attaque = (int) (this.attaque +500);
     }
     public void acheterDefense(){
-        this.defense = (int) (this.defense +100);
+        this.defense = (int) (this.defense +500);
     }
     public void acheterFuite(){
         this.fuite = (int) (this.fuite +5);

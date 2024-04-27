@@ -229,6 +229,8 @@ public class HelloController implements Initializable {
     private ImageView animationAttEnnemi;
     @FXML
     private ImageView animationDefEnnemi;
+    @FXML
+    private Label lblPrixVie;
 
     public void invisible(AnchorPane apCourante) {apCourante.setVisible(false);return;}
     public void visible(AnchorPane apCourante){apCourante.setVisible(true);return;}
@@ -719,7 +721,8 @@ public class HelloController implements Initializable {
         invisible(mapWin);
         invisible(mapLose);
     }
-
+    ////////////////////////////////////////////
+    /////////////////// BOUTONS //////////////////
     @FXML
     public void clickedStart1(Event event) {
         clearAll();
@@ -765,6 +768,29 @@ public class HelloController implements Initializable {
         clearAll();
         visible(mapDebut);
     }
+    @Deprecated
+    public void clickedRetourDebut(Event event) {
+        clearAll();
+        visible(mapChoixCapitaine);
+    }
+    @FXML
+    public void clickedRetourDes(Event event) {
+        clearAll();
+        visible(mapEquipage);
+    }
+    @FXML
+    public void clickedCapInfo(Event event) {
+        clearAll();
+        visible(mapDes);
+        changerBerry();
+    }
+    /////////////////////////////////////
+    /////////////FONCTIONS////////////////
+    /////////////////////////////////////
+    int prixVie = 100;
+    public void augmentationPrix(){
+        prixVie = prixVie + 100;
+    }
     public void changerText(Label lblTexte, int intTexte){
         lblTexte.setText(Integer.toString(intTexte));
     }
@@ -777,6 +803,7 @@ public class HelloController implements Initializable {
         changerText(lblBerry1, berryActuel);
         changerText(lblBerry2, berryActuel);
         changerText(lblBerry3, berryActuel);
+        changerText(lblPrixVie, prixVie);
     }
     public void ajoutBerry(int berry){
         berryActuel = berryActuel + berry;
@@ -802,8 +829,10 @@ public class HelloController implements Initializable {
 
     @FXML
     public void clickedPlusVie(Event event) {
-        if(berryActuel>=100){
-            berryActuel= berryActuel-100;
+        if(berryActuel>=prixVie){
+            berryActuel= berryActuel-prixVie;
+            augmentationPrix();
+            System.out.println(prixVie);
             changerBerry();
             joueurD.acheterVie();
             joueurD.setVieMax(joueurD.getVieMax());
@@ -1253,21 +1282,7 @@ public class HelloController implements Initializable {
         lblFuiteD.setText(String.valueOf(description.getFuite()));
         lblNomD.setText(String.valueOf(description.getNom()));
     }
-    @Deprecated
-    public void clickedRetourDebut(Event event) {
-        clearAll();
-        visible(mapChoixCapitaine);
-    }
-    @FXML
-    public void clickedRetourDes(Event event) {
-        clearAll();
-        visible(mapEquipage);
-    }
-    @FXML
-    public void clickedCapInfo(Event event) {
-        clearAll();
-        visible(mapDes);
-    }
+
     //////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////////    ILES      /////////////////////////////////////////////
