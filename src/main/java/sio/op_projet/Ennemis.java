@@ -9,6 +9,7 @@ public class Ennemis {
     private int defense;
     private int fuite;
     private int berryE;
+    private int id;
 
     public Ennemis(String nom, String image, int vieMax, int attaque, int defense, int fuite,int berryE) {
         this.nom = nom;

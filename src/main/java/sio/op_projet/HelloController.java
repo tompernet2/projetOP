@@ -1,21 +1,15 @@
 package sio.op_projet;
 
-import javafx.collections.FXCollections;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import org.w3c.dom.ls.LSOutput;
 
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -231,6 +225,36 @@ public class HelloController implements Initializable {
     private ImageView animationDefEnnemi;
     @FXML
     private Label lblPrixVie;
+    @FXML
+    private Label lblPrixAtt;
+    @FXML
+    private Label lblPrixFuite;
+    @FXML
+    private Label lblPrixDef;
+    @FXML
+    private AnchorPane mapPersonnageEquipage;
+    @FXML
+    private ImageView imagePersonnage1;
+    @FXML
+    private ImageView image2C;
+    @FXML
+    private ImageView image1C;
+    @FXML
+    private AnchorPane mapChangerPersonnage;
+    @FXML
+    private AnchorPane mapRecrutement;
+    @FXML
+    private ImageView imageRecrutementEnnemi;
+    @FXML
+    private ImageView imagePersonnage2;
+    @FXML
+    private ImageView imagePersonnage3;
+    @FXML
+    private ImageView imagePersonnage4;
+    @FXML
+    private ImageView image4C;
+    @FXML
+    private ImageView image3C;
 
     public void invisible(AnchorPane apCourante) {apCourante.setVisible(false);return;}
     public void visible(AnchorPane apCourante){apCourante.setVisible(true);return;}
@@ -243,8 +267,8 @@ public class HelloController implements Initializable {
 
 
     Description luffyD = new Description("Luffy", "pirate/luffy.gif",
-            1000,
-            100,
+            100000,
+            10000,
             10,
             0);
     Description kiddD = new Description("Kidd",
@@ -299,18 +323,36 @@ public class HelloController implements Initializable {
             50,
             10,
             100);
+    Description cobyD = new Description("Coby",
+            "pirate/coby.gif",
+            4000,
+            300,
+            100,
+            50);
     Ennemis smokerE = new Ennemis("Smoker", "pirate/smoker.gif",
             2000,
             150,
             80,
             10,
             200);
+    Description smokerD = new Description("Smoker",
+            "pirate/somker.gif",
+            4000,
+            300,
+            100,
+            50);
     Ennemis namiE = new Ennemis("Nami", "pirate/nami.gif",
             2500,
             200,
             100,
             10,
             300);
+    Description namiD = new Description("Nami",
+            "pirate/nami.gif",
+            4000,
+            300,
+            100,
+            50);
     Ennemis chopperE = new Ennemis("Chopper", "pirate/chopper.gif",
             3000,
             250,
@@ -626,9 +668,13 @@ public class HelloController implements Initializable {
 
 
     Description joueurD ;
+    Description perso2 ;
+    Description perso3 ;
+    Description perso4 ;
     Ennemis e;
     int berryActuel = 1000000;
     int victoireTotal1 = 0;
+    int place = 0;
 
     @Override
     public void  initialize(URL url, ResourceBundle resourceBundle){
@@ -685,6 +731,8 @@ public class HelloController implements Initializable {
         changeImageViewVisible(ile58, false);
         changeImageViewVisible(ile59, false);
         changeImageViewVisible(ileBoss, false);
+
+        Description ennemi1 = new Description(cobyE.getNom(),cobyE.getImage(), cobyE.getVieMax(), cobyE.getAttaque(), cobyE.getDefense(), cobyE.getFuite());
     }
     public void changeImageViewImg(ImageView imgView, String linkImage){
         imgView.setImage(
@@ -720,6 +768,9 @@ public class HelloController implements Initializable {
         invisible(mapDes);
         invisible(mapWin);
         invisible(mapLose);
+        invisible(mapPersonnageEquipage);
+        invisible(mapChangerPersonnage);
+        invisible(mapRecrutement);
     }
     ////////////////////////////////////////////
     /////////////////// BOUTONS //////////////////
@@ -728,7 +779,7 @@ public class HelloController implements Initializable {
         clearAll();
         visible(mapChoixCapitaine);
         joueurD = luffyD;
-        afficherPersonnage(luffyD);
+        afficherPersonnage(joueurD);
         lblBerry1.setText(String.valueOf(berryActuel));
         lblBerry2.setText(String.valueOf(berryActuel));
         lblBerry3.setText(String.valueOf(berryActuel));
@@ -751,10 +802,6 @@ public class HelloController implements Initializable {
     public void clickedStart(Event event) {
         clearAll();
         visible(mapDebut);
-    }
-
-    @Deprecated
-    public void clickedListePersonnage(MouseEvent mouseEvent) {
     }
 
     @FXML
@@ -783,13 +830,29 @@ public class HelloController implements Initializable {
         clearAll();
         visible(mapDes);
         changerBerry();
+        if (joueurD.getFuite()==100){
+            lblPrixFuite.setText("MAX");
+        }
     }
     /////////////////////////////////////
     /////////////FONCTIONS////////////////
     /////////////////////////////////////
     int prixVie = 100;
-    public void augmentationPrix(){
+    int prixAttaque = 100;
+    int prixDefense = 100;
+    int prixFuite = 100;
+
+    public void augmentationPrixVie(){
         prixVie = prixVie + 100;
+    }
+    public void augmentationPrixAttaque(){
+        prixAttaque = prixAttaque + 100;
+    }
+    public void augmentationPrixDefense(){
+        prixDefense = prixDefense + 100;
+    }
+    public void augmentationPrixFuite(){
+        prixFuite = prixFuite + 100;
     }
     public void changerText(Label lblTexte, int intTexte){
         lblTexte.setText(Integer.toString(intTexte));
@@ -804,6 +867,9 @@ public class HelloController implements Initializable {
         changerText(lblBerry2, berryActuel);
         changerText(lblBerry3, berryActuel);
         changerText(lblPrixVie, prixVie);
+        changerText(lblPrixAtt, prixAttaque);
+        changerText(lblPrixDef, prixDefense);
+        changerText(lblPrixFuite, prixFuite);
     }
     public void ajoutBerry(int berry){
         berryActuel = berryActuel + berry;
@@ -831,33 +897,39 @@ public class HelloController implements Initializable {
     public void clickedPlusVie(Event event) {
         if(berryActuel>=prixVie){
             berryActuel= berryActuel-prixVie;
-            augmentationPrix();
-            System.out.println(prixVie);
+            augmentationPrixVie();
             changerBerry();
             joueurD.acheterVie();
             joueurD.setVieMax(joueurD.getVieMax());
             changerText(lblVieD, joueurD.getVieMax());
             changerText(lblVieActuelleP,joueurD.getVieMax());
             changerText(lblVieMaxP,joueurD.getVieMax());
+            System.out.println(prixVie);
         }
     }
 
     @FXML
     public void clickedPlusAttaque(Event event) {
-        if(berryActuel>=100){
-            berryActuel= berryActuel-100;
+        if(berryActuel>=prixAttaque){
+            berryActuel= berryActuel-prixAttaque;
+            augmentationPrixAttaque();
             changerBerry();
             joueurD.acheterAttaque();
+            joueurD.setAttaque(joueurD.getAttaque());
             changerText(lblAttaqueD, joueurD.getAttaque());
+            System.out.println(prixAttaque);
         }
     }
 
     @FXML
     public void clickedPlusDefense(Event event) {
-        if(berryActuel>=100){
-            berryActuel= berryActuel-100;
+        if(berryActuel>=prixDefense){
+            berryActuel= berryActuel-prixDefense;
+            augmentationPrixDefense();
+            System.out.println(prixDefense);
             changerBerry();
             joueurD.acheterDefense();
+            joueurD.setDefense(joueurD.getDefense());
             changerText(lblDefenseD, joueurD.getDefense());
         }
     }
@@ -865,11 +937,17 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedPlusFuite(Event event) {
         if (joueurD.getFuite() <100) {
-            if (berryActuel >= 100) {
-                berryActuel = berryActuel - 100;
+            if(berryActuel>=prixFuite){
+                berryActuel= berryActuel-prixFuite;
+                augmentationPrixFuite();
+                System.out.println(prixFuite);
                 changerBerry();
                 joueurD.acheterFuite();
+                joueurD.setFuite(joueurD.getFuite());
                 changerText(lblFuiteD, joueurD.getFuite());
+                if (joueurD.getFuite()==100){
+                    lblPrixFuite.setText("MAX");
+                }
             }
         }
     }
@@ -1189,7 +1267,8 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedContinue(Event event) {
         clearAll();
-        visible(mapCarte);
+        visible(mapRecrutement);
+        changeImageViewImg(imageRecrutementEnnemi, "personnages/"+e.getImage());
     }
 
     @FXML
@@ -1281,6 +1360,8 @@ public class HelloController implements Initializable {
         lblDefenseD.setText(String.valueOf(description.getDefense()));
         lblFuiteD.setText(String.valueOf(description.getFuite()));
         lblNomD.setText(String.valueOf(description.getNom()));
+        changeImageViewImg(imagePersonnage1, "personnages/"+description.getImage());
+        changeImageViewImg(image1C, "personnages/"+description.getImage());
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////
@@ -1637,5 +1718,65 @@ public class HelloController implements Initializable {
         }
     }
 
+    /////////////////////////
+    ///////////MODIFICATION/////
+    ////////////////////////////
+    @FXML
+    public void clickedInventaireEquipage(Event event) {
+        clearAll();
+        visible(mapPersonnageEquipage);
+    }
 
+    @FXML
+    public void clickedRetourInventaire(Event event) {
+        clearAll();
+        visible(mapEquipage);
+    }
+
+    @FXML
+    public void clickedInventaireCombat(Event event) {
+        clearAll();
+        visible(mapChangerPersonnage);
+    }
+
+    @FXML
+    public void clickedSelect2(Event event) {
+        clearAll();
+        visible(mapCombat);
+        afficherPersonnage(perso2);
+    }
+
+    @FXML
+    public void clickedSelect1(Event event) {
+        clearAll();
+        visible(mapCombat);
+    }
+
+    @FXML
+    public void clickedNon(Event event) {
+        clearAll();
+        visible(mapCarte);
+    }
+
+    @FXML
+    public void clickedOui(Event event) {
+        place +=1;
+        clearAll();
+        visible(mapCarte);
+        if (place == 1){
+            perso2 = cobyD;
+            changeImageViewImg(image2C, "personnages/"+cobyE.getImage());
+            changeImageViewImg(imagePersonnage2, "personnages/"+cobyE.getImage());
+        }
+        if (place == 2){
+            perso2 = smokerD;
+            changeImageViewImg(image3C, "personnages/"+smokerE.getImage());
+            changeImageViewImg(imagePersonnage3, "personnages/"+smokerE.getImage());
+        }
+        if (place == 3){
+            perso2 = namiD;
+            changeImageViewImg(image4C, "personnages/"+namiE.getImage());
+            changeImageViewImg(imagePersonnage4, "personnages/"+namiE.getImage());
+        }
+    }
 }
