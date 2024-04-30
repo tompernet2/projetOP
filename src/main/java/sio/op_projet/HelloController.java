@@ -8,11 +8,10 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 
 import java.net.URL;
-import java.util.ResourceBundle;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 
 public class HelloController implements Initializable {
 
@@ -262,9 +261,6 @@ public class HelloController implements Initializable {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////           PERSONNAGE          ///////////////////////////////////////////
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
     Description luffyD = new Description("Luffy", "pirate/luffy.gif",
             100000,
@@ -731,8 +727,6 @@ public class HelloController implements Initializable {
         changeImageViewVisible(ile58, false);
         changeImageViewVisible(ile59, false);
         changeImageViewVisible(ileBoss, false);
-
-        Description ennemi1 = new Description(cobyE.getNom(),cobyE.getImage(), cobyE.getVieMax(), cobyE.getAttaque(), cobyE.getDefense(), cobyE.getFuite());
     }
     public void changeImageViewImg(ImageView imgView, String linkImage){
         imgView.setImage(
@@ -779,7 +773,7 @@ public class HelloController implements Initializable {
         clearAll();
         visible(mapChoixCapitaine);
         joueurD = luffyD;
-        afficherPersonnage(joueurD);
+        afficherPersonnage(luffyD);
         lblBerry1.setText(String.valueOf(berryActuel));
         lblBerry2.setText(String.valueOf(berryActuel));
         lblBerry3.setText(String.valueOf(berryActuel));
@@ -886,6 +880,7 @@ public class HelloController implements Initializable {
             }
         }, 400);
     }
+
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////////////
@@ -1269,6 +1264,7 @@ public class HelloController implements Initializable {
         clearAll();
         visible(mapRecrutement);
         changeImageViewImg(imageRecrutementEnnemi, "personnages/"+e.getImage());
+        majInventaireEquipage();
     }
 
     @FXML
@@ -1283,6 +1279,7 @@ public class HelloController implements Initializable {
     //////////////////                  CAPITAINE        /////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////
+
 
     @FXML
     public void clickedChoixLuffy(Event event) {
@@ -1721,6 +1718,7 @@ public class HelloController implements Initializable {
     /////////////////////////
     ///////////MODIFICATION/////
     ////////////////////////////
+
     @FXML
     public void clickedInventaireEquipage(Event event) {
         clearAll();
@@ -1738,12 +1736,17 @@ public class HelloController implements Initializable {
         clearAll();
         visible(mapChangerPersonnage);
     }
-
+    private Description temp;
     @FXML
     public void clickedSelect2(Event event) {
         clearAll();
         visible(mapCombat);
-        afficherPersonnage(perso2);
+        temp = joueurD;
+        joueurD = perso2;
+        perso2 = temp;
+        afficherPersonnage(joueurD);
+        changeImageViewImg(image2C, "personnages/"+perso2.getImage());
+
     }
 
     @FXML
@@ -1778,5 +1781,10 @@ public class HelloController implements Initializable {
             changeImageViewImg(image4C, "personnages/"+namiE.getImage());
             changeImageViewImg(imagePersonnage4, "personnages/"+namiE.getImage());
         }
+    }
+    public void majInventaireEquipage(){
+        changeImageViewImg(imagePersonnage1,"personnages/"+joueurD.getImage());
+        changeImageViewImg(imagePersonnage2,"personnages/"+perso2.getImage());
+
     }
 }

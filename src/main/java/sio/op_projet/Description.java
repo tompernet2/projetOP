@@ -1,6 +1,8 @@
 package sio.op_projet;
 
-public class Description {
+import javafx.scene.Node;
+
+public class Description extends Node {
     private String nom;
     private String image;
     private int vieMax;
@@ -110,5 +112,10 @@ public class Description {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    @Override
+    public Node getStyleableNode() {
+        return super.getStyleableNode();
     }
 }
