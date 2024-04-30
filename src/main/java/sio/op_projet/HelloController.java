@@ -332,7 +332,7 @@ public class HelloController implements Initializable {
             10,
             200);
     Description smokerD = new Description("Smoker",
-            "pirate/somker.gif",
+            "pirate/smoker.gif",
             4000,
             300,
             100,
@@ -663,10 +663,14 @@ public class HelloController implements Initializable {
             100000000);
 
 
+    Description perso2 = new Description("","",
+            0,
+            0,
+            0,
+            0 );
+
+
     Description joueurD ;
-    Description perso2 ;
-    Description perso3 ;
-    Description perso4 ;
     Ennemis e;
     int berryActuel = 1000000;
     int victoireTotal1 = 0;
@@ -1265,6 +1269,8 @@ public class HelloController implements Initializable {
         visible(mapRecrutement);
         changeImageViewImg(imageRecrutementEnnemi, "personnages/"+e.getImage());
         majInventaireEquipage();
+        System.out.println("Victoire = "+victoireTotal1);
+        System.out.println("Place = "+place);
     }
 
     @FXML
@@ -1766,25 +1772,37 @@ public class HelloController implements Initializable {
         place +=1;
         clearAll();
         visible(mapCarte);
-        if (place == 1){
-            perso2 = cobyD;
-            changeImageViewImg(image2C, "personnages/"+cobyE.getImage());
-            changeImageViewImg(imagePersonnage2, "personnages/"+cobyE.getImage());
+        if (victoireTotal1 == 1){
+            if (place == 1){
+                perso2 = cobyD;
+                majParPlace(perso2, image2C, imagePersonnage2);
+            }
         }
-        if (place == 2){
-            perso2 = smokerD;
-            changeImageViewImg(image3C, "personnages/"+smokerE.getImage());
-            changeImageViewImg(imagePersonnage3, "personnages/"+smokerE.getImage());
-        }
-        if (place == 3){
-            perso2 = namiD;
-            changeImageViewImg(image4C, "personnages/"+namiE.getImage());
-            changeImageViewImg(imagePersonnage4, "personnages/"+namiE.getImage());
+        if (victoireTotal1 == 2){
+            if (place == 1){
+                perso2 = smokerD;
+                majParPlace(perso2, image2C, imagePersonnage2);
+            }
         }
     }
     public void majInventaireEquipage(){
         changeImageViewImg(imagePersonnage1,"personnages/"+joueurD.getImage());
         changeImageViewImg(imagePersonnage2,"personnages/"+perso2.getImage());
+    }
+    public void majParPlace(Description description, ImageView image1, ImageView image2){
+        changeImageViewImg(image1, "personnages/"+description.getImage());
+        changeImageViewImg(image2, "personnages/"+description.getImage());
+    }
 
+    @FXML
+    public void clickedPersonnage2(Event event) {
+        if (place >=1){
+            temp = joueurD;
+            joueurD = perso2;
+            perso2 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(imagePersonnage2, "personnages/"+perso2.getImage());
+            changeImageViewImg(image2C, "personnages/"+perso2.getImage());
+        }
     }
 }
