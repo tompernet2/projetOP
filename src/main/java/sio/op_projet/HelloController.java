@@ -355,30 +355,59 @@ public class HelloController implements Initializable {
             150,
             10,
             350);
+    Description chopperD= new Description("Chopper", "pirate/chopper.gif",
+            3000,
+            250,
+            150,
+            50);
     Ennemis brookE = new Ennemis("Brook", "pirate/brook.gif",
             3500,
             250,
             500,
             10,
             400);
+    Description brookD = new Description("Brook", "pirate/brook.gif",
+            3500,
+            250,
+            500,
+            50);
+
     Ennemis robinE = new Ennemis("Robin", "pirate/robin.png",
             4000,
             250,
             300,
             10,
             450);
+    Description robinD = new Description("Robin", "pirate/robin.png",
+            4000,
+            250,
+            300,
+            50);
+
     Ennemis zoroE = new Ennemis("Zoro", "pirate/zoro.gif",
             4500,
             300,
             500,
             10,
             500);
+    Description zoroD = new Description("Zoro", "pirate/zoro.gif",
+            4500,
+            300,
+            500,
+            50);
+
     Ennemis enerE = new Ennemis("Ener", "pirate/ener.gif",
             5000,
             350,
             1000,
             10,
             600);
+    Description enerD = new Description("Ener", "pirate/ener.gif",
+            5000,
+            350,
+            1000,
+            50);
+
 
 
 
@@ -389,60 +418,120 @@ public class HelloController implements Initializable {
             1000,
             10,
             600);
+    Description sentomaruD = new Description("Sentomaru", "pirate/sentomaru.gif",
+            4000,
+            300,
+            1000,
+            50);
+
     Ennemis magellanE = new Ennemis("Magellan", "pirate/magellan.gif",
             4500,
             300,
             1100,
             10,
             650);
+    Description magellanD = new Description("Magellan", "pirate/magellan.gif",
+            4500,
+            300,
+            1100,
+            50);
+
     Ennemis kakuE = new Ennemis("Kaku", "pirate/kaku.gif",
             5000,
             350,
             1200,
             10,
             700);
+    Description kakuD = new Description("Kaku", "pirate/kaku.gif",
+            5000,
+            350,
+            1200,
+            50);
+
     Ennemis lucciE = new Ennemis("Lucci", "pirate/lucci.gif",
             6000,
             400,
             1400,
             10,
             750);
+    Description lucciD = new Description("Lucci", "pirate/lucci.gif",
+            6000,
+            400,
+            1400,
+            50);
+
     Ennemis fujitoraE = new Ennemis("Fujitora", "pirate/fujitora.png",
             5500,
             400,
             1200,
             10,
             800);
-    Ennemis kizaruE = new Ennemis("Kirzaru", "pirate/kizaru.gif",
+    Description fujitoraD = new Description("Fujitora", "pirate/fujitora.png",
+            5500,
+            400,
+            1200,
+            50);
+
+    Ennemis kizaruE = new Ennemis("Kizaru", "pirate/kizaru.gif",
             5500,
             450,
             10000,
             10,
             800);
+    Description kizaruD = new Description("Kizaru", "pirate/kizaru.gif",
+            5500,
+            450,
+            10000,
+            50);
+
     Ennemis aokijiE = new Ennemis("Aokiji", "pirate/aokiji.gif",
             55000,
             500,
             1300,
             10,
             800);
+    Description aokijiD = new Description("Aokiji", "pirate/aokiji.gif",
+            55000,
+            500,
+            1300,
+            50);
+
     Ennemis akainuE = new Ennemis("Akainu", "pirate/akainu.gif",
             7000,
             550,
             1500,
             10,
             1000);
+    Description akainuD = new Description("Akainu", "pirate/akainu.gif",
+            7000,
+            550,
+            1500,
+            50);
+
     Ennemis garpE = new Ennemis("Garp", "pirate/garp.gif",
             7000,
             600,
             2000,
             10,
             1100);
+    Description garpD = new Description("Garp", "pirate/garp.gif",
+            7000,
+            600,
+            2000,
+            50);
+
     Ennemis sengokuE = new Ennemis("Sengoku", "pirate/sengoku.gif",
             8000,
             700,
             2500,
             10,
             1200);
+    Description sengokuD = new Description("Sengoku", "pirate/sengoku.gif",
+            8000,
+            700,
+            2500,
+            50);
+
 
 
 
@@ -454,78 +543,156 @@ public class HelloController implements Initializable {
             0,
             10,
             1);
+    Description foxyD = new Description("Foxy", "pirate/foxy.gif",
+            500,
+            10,
+            0,
+            10);
+
     Ennemis morganE = new Ennemis("Morgan", "pirate/morgan.png",
             3000,
             1000,
             800,
             10,
             400);
+    Description morganD = new Description("Morgan", "pirate/morgan.png",
+            3000,
+            1000,
+            800,
+            10);
+
     Ennemis monetE = new Ennemis("Monet", "pirate/monet.png",
             4000,
             1200,
             1000,
             10,
             500);
+    Description monetD = new Description("Monet", "pirate/monet.png",
+            4000,
+            1200,
+            1000,
+            10);
+
     Ennemis cesarE = new Ennemis("César", "pirate/cesar.png",
             5000,
             1100,
             1500,
             10,
             1000);
+    Description cesarD = new Description("César", "pirate/cesar.png",
+            5000,
+            1100,
+            1500,
+            10);
+
     Ennemis giantE = new Ennemis("Géant", "pirate/geant.png",
             6000,
             2000,
             2000,
             10,
             1100);
+    Description giantD = new Description("Géant", "pirate/geant.png",
+            6000,
+            2000,
+            2000,
+            10);
+
     Ennemis trebolE = new Ennemis("Trébol", "pirate/trebol.png",
             5000,
             1500,
             1500,
             10,
             1200);
+    Description trebolD = new Description("Trébol", "pirate/trebol.png",
+            5000,
+            1500,
+            1500,
+            10);
+
     Ennemis doflamingoE = new Ennemis("Doflamingo", "pirate/doflamingo.gif",
             10000,
             3000,
             2000,
             10,
             1400);
+    Description doflamingoD = new Description("Doflamingo", "pirate/doflamingo.gif",
+            10000,
+            3000,
+            2000,
+            10);
+
     Ennemis jinbeE = new Ennemis("Jinbe", "pirate/jinbei.gif",
             8000,
             2000,
             3000,
             10,
             1400);
+    Description jinbeD = new Description("Jinbe", "pirate/jinbei.gif",
+            8000,
+            2000,
+            3000,
+            10);
+
     Ennemis moriaE = new Ennemis("Moria", "pirate/moria.gif",
             7000,
             2000,
             4000,
             10,
             1400);
+    Description moriaD = new Description("Moria", "pirate/moria.gif",
+            7000,
+            2000,
+            4000,
+            10);
+
     Ennemis marcoE = new Ennemis("Marco", "pirate/marco.gif",
             10000,
             4000,
             7000,
             10,
             1500);
+    Description marcoD = new Description("Marco", "pirate/marco.gif",
+            10000,
+            4000,
+            7000,
+            10);
+
     Ennemis mihawkE = new Ennemis("Mihawk", "pirate/mihawk.gif",
             10000,
             5000,
             5000,
             10,
             1800);
+    Description mihawkD = new Description("Mihawk", "pirate/mihawk.gif",
+            10000,
+            5000,
+            5000,
+            10);
+
     Ennemis shanksE = new Ennemis("Shanks", "pirate/shanks.gif",
             10000,
             10000,
             10000,
             10,
             2000);
+    Description shanksD = new Description("Shanks", "pirate/shanks.gif",
+            10000,
+            10000,
+            10000,
+            10);
+
     Ennemis shikiE = new Ennemis("Shiki", "pirate/shiki.gif",
             11000,
             11000,
             11000,
             10,
             2500);
+    Description shikiD = new Description("Shiki", "pirate/shiki.gif",
+            11000,
+            11000,
+            11000,
+            10);
+
 
 
 
@@ -536,66 +703,132 @@ public class HelloController implements Initializable {
             10000,
             10,
             1000);
+    Description orochiD = new Description("Orochi", "pirate/orochi.png",
+            11000,
+            10000,
+            10000,
+            10);
+
     Ennemis whoE = new Ennemis("Who's who", "pirate/who.png",
             11000,
             10000,
             10000,
             10,
             1000);
+    Description whoD = new Description("Who's who", "pirate/who.png",
+            11000,
+            10000,
+            10000,
+            10);
+
     Ennemis drakeE = new Ennemis("X-Drake", "pirate/drake.png",
             11000,
             10000,
             10000,
             10,
             1000);
+    Description drakeD = new Description("X-Drake", "pirate/drake.png",
+            11000,
+            10000,
+            10000,
+            10);
+
     Ennemis sasakiE = new Ennemis("Sasaki", "pirate/sasaki.png",
             11000,
             10000,
             10000,
             10,
             1000);
+    Description sasakiD = new Description("Sasaki", "pirate/sasaki.png",
+            11000,
+            10000,
+            10000,
+            10);
+
     Ennemis blackmariaE = new Ennemis("Black Maria", "pirate/blackMaria.png",
             13000,
             12000,
             14000,
             10,
             1500);
+    Description blackmariaD = new Description("Black Maria", "pirate/blackMaria.png",
+            13000,
+            12000,
+            14000,
+            10);
+
     Ennemis yamatoE = new Ennemis("Yamato", "pirate/yamato.png",
             15000,
             15000,
             15000,
             10,
             3000);
+    Description yamatoD = new Description("Yamato", "pirate/yamato.png",
+            15000,
+            15000,
+            15000,
+            10);
+
     Ennemis jackE = new Ennemis("Jack", "pirate/jack.png",
             14000,
             14000,
             14000,
             10,
             4000);
+    Description jackD = new Description("Jack", "pirate/jack.png",
+            14000,
+            14000,
+            14000,
+            10);
+
     Ennemis queenE = new Ennemis("Queen", "pirate/queen.png",
             15000,
             15000,
             18000,
             10,
             4000);
+    Description queenD = new Description("Queen", "pirate/queen.png",
+            15000,
+            15000,
+            18000,
+            10);
+
     Ennemis kingE = new Ennemis("King", "pirate/king.png",
             18000,
             18000,
             18000,
             10,
             5000);
+    Description kingD = new Description("King", "pirate/king.png",
+            18000,
+            18000,
+            18000,
+            10);
+
     Ennemis bigmomE = new Ennemis("Bigmom", "pirate/bigmom.png",
             19000,
             17000,
             19000,
             10,
             7000);
+    Description bigmomD = new Description("Bigmom", "pirate/bigmom.png",
+            19000,
+            17000,
+            19000,
+            10);
+
     Ennemis kaidoE = new Ennemis("Kaido", "pirate/kaido.png",
             20000,
             20000,
             20000,
             10,
             10000);
+    Description kaidoD = new Description("Kaido", "pirate/kaido.png",
+            20000,
+            20000,
+            20000,
+            10);
+
 
 
 
@@ -605,54 +838,108 @@ public class HelloController implements Initializable {
             18000,
             10,
             7000);
+    Description vascoD = new Description("Vasco Shot", "pirate/vasco.png",
+            18000,
+            18000,
+            18000,
+            10);
+
     Ennemis pizarroE = new Ennemis("Pizarro", "pirate/pizarro.png",
             18000,
             18000,
             18000,
             10,
             8000);
+    Description pizarroD = new Description("Pizarro", "pirate/pizarro.png",
+            18000,
+            18000,
+            18000,
+            10);
+
     Ennemis wasatsumiE = new Ennemis("Wadatsumi", "pirate/wadatsumi.png",
             18000,
             18000,
             18000,
             10,
             7000);
-    Ennemis augurE = new Ennemis("Van augur", "pirate/augur.png",
+    Description wasatsumiD = new Description("Wadatsumi", "pirate/wadatsumi.png",
+            18000,
+            18000,
+            18000,
+            10);
+
+    Ennemis augurE = new Ennemis("Van Augur", "pirate/augur.png",
             20000,
             20000,
             20000,
             10,
             8000);
+    Description augurD = new Description("Van Augur", "pirate/augur.png",
+            20000,
+            20000,
+            20000,
+            10);
+
     Ennemis devonE = new Ennemis("Devon", "pirate/devon.png",
             20000,
             20000,
             20000,
             10,
             9000);
+    Description devonD = new Description("Devon", "pirate/devon.png",
+            20000,
+            20000,
+            20000,
+            10);
+
     Ennemis burgessE = new Ennemis("Burgess", "pirate/burgess.png",
             20000,
             20000,
             20000,
             10,
             10000);
+    Description burgessD = new Description("Burgess", "pirate/burgess.png",
+            20000,
+            20000,
+            20000,
+            10);
+
     Ennemis teachE = new Ennemis("Teach", "pirate/barbeNoir.gif",
             30000,
             30000,
             30000,
             10,
             15000);
+    Description teachD = new Description("Teach", "pirate/barbeNoir.gif",
+            30000,
+            30000,
+            30000,
+            10);
+
     Ennemis vegapunkE = new Ennemis("Vegapunk", "pirate/vegapunk.png",
             40000,
             40000,
             40000,
             10,
             100000);
+    Description vegapunkD = new Description("Vegapunk", "pirate/vegapunk.png",
+            40000,
+            40000,
+            40000,
+            10);
+
     Ennemis doyensE = new Ennemis("Les 5 doyens", "pirate/5doyen.png",
             100000,
             100000,
             100000,
             10,
             100000000);
+    Description doyensD = new Description("Les 5 doyens", "pirate/5doyen.png",
+            100000,
+            100000,
+            100000,
+            10);
+
 
 
     Ennemis imuE = new Ennemis("IMU", "pirate/imu.png",
@@ -1801,39 +2088,151 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedOui(Event event) {
         place +=1;
-        clearAll();
-        visible(mapCarte);
+        if (place>=4){
+            place-=1;
+            Alert erreur = new Alert(Alert.AlertType.INFORMATION);
+            erreur.setContentText("L'equipage est complet");
+            erreur.setHeaderText("ERREUR!!!");
+            erreur.showAndWait();
+            clearAll();
+            visible(mapCarte);
+        }
         if (victoireTotal1 == 1){
             if (place == 1){
                 perso2 = cobyD;
                 majParPlace(perso2, image2C, imagePersonnage2);
+                clearAll();
+                visible(mapCarte);
             }
         }
         if (victoireTotal1 == 2){
             if (place == 1){
                 perso2 = smokerD;
                 majParPlace(perso2, image2C, imagePersonnage2);
+                clearAll();
+                visible(mapCarte);
             }
             if (place == 2){
                 perso3 = smokerD;
                 majParPlace(perso3, image3C, imagePersonnage3);
+                clearAll();
+                visible(mapCarte);
             }
         }
         if (victoireTotal1 == 3) {
-            if (place == 1) {
-                perso2 = namiD;
-                majParPlace(perso2, image2C, imagePersonnage2);
-            }
-            if (place == 2) {
-                perso3 = namiD;
-                majParPlace(perso3, image3C, imagePersonnage3);
-            }
-            if (place == 3) {
-                perso4 = namiD;
-                majParPlace(perso4, image4C, imagePersonnage4);
-            }
+            placeDisponible(namiD);}
+        if (victoireTotal1 == 4) {
+            placeDisponible(chopperD);}
+        if (victoireTotal1 == 5) {
+            placeDisponible(brookD);}
+        if (victoireTotal1 == 6) {
+            placeDisponible(robinD);}
+        if (victoireTotal1 == 7) {
+            placeDisponible(zoroD);}
+        if (victoireTotal1 == 8) {
+            placeDisponible(enerD);}
+        if (victoireTotal1 == 9) {
+            placeDisponible(sentomaruD);}
+        if (victoireTotal1 == 10) {
+            placeDisponible(magellanD);}
+        if (victoireTotal1 == 11) {
+            placeDisponible(kakuD);}
+        if (victoireTotal1 == 12) {
+            placeDisponible(lucciD);}
+        if (victoireTotal1 == 13) {
+            placeDisponible(fujitoraD);}
+        if (victoireTotal1 == 14) {
+            placeDisponible(kizaruD);}
+        if (victoireTotal1 == 15) {
+            placeDisponible(aokijiD);}
+        if (victoireTotal1 == 16) {
+            placeDisponible(akainuD);}
+        if (victoireTotal1 == 17) {
+            placeDisponible(garpD);}
+        if (victoireTotal1 == 18) {
+            placeDisponible(sengokuD);}
+        if (victoireTotal1 == 19) {
+            placeDisponible(foxyD);}
+        if (victoireTotal1 == 20) {
+            placeDisponible(morganD);}
+        if (victoireTotal1 == 21) {
+            placeDisponible(monetD);}
+        if (victoireTotal1 == 22) {
+            placeDisponible(cesarD);}
+        if (victoireTotal1 == 23) {
+            placeDisponible(giantD);}
+        if (victoireTotal1 == 24) {
+            placeDisponible(trebolD);}
+        if (victoireTotal1 == 25) {
+            placeDisponible(doflamingoD);}
+        if (victoireTotal1 == 26) {
+            placeDisponible(jinbeD);}
+        if (victoireTotal1 == 27) {
+            placeDisponible(moriaD);}
+        if (victoireTotal1 == 28) {
+            placeDisponible(marcoD);}
+        if (victoireTotal1 == 29) {
+            placeDisponible(mihawkD);}
+        if (victoireTotal1 == 30) {
+            placeDisponible(shanksD);}
+        if (victoireTotal1 == 31) {
+            placeDisponible(shikiD);}
+        if (victoireTotal1 == 32) {
+            placeDisponible(orochiD);}
+        if (victoireTotal1 == 33) {
+            placeDisponible(whoD);}
+        if (victoireTotal1 == 34) {
+            placeDisponible(drakeD);}
+        if (victoireTotal1 == 35) {
+            placeDisponible(sasakiD);}
+        if (victoireTotal1 == 36) {
+            placeDisponible(blackmariaD);}
+        if (victoireTotal1 == 37) {
+            placeDisponible(yamatoD);}
+        if (victoireTotal1 == 38) {
+            placeDisponible(jackD);}
+        if (victoireTotal1 == 39) {
+            placeDisponible(queenD);}
+        if (victoireTotal1 == 40) {
+            placeDisponible(kingD);}
+        if (victoireTotal1 == 41) {
+            placeDisponible(bigmomD);}
+        if (victoireTotal1 == 42) {
+            placeDisponible(kaidoD);}
+        if (victoireTotal1 == 43) {
+            placeDisponible(vascoD);}
+        if (victoireTotal1 == 44) {
+            placeDisponible(pizarroD);}
+        if (victoireTotal1 == 45) {
+            placeDisponible(wasatsumiD);}
+        if (victoireTotal1 == 46) {
+            placeDisponible(augurD);}
+        if (victoireTotal1 == 47) {
+            placeDisponible(devonD);}
+        if (victoireTotal1 == 48) {
+            placeDisponible(burgessD);}
+        if (victoireTotal1 == 49) {
+            placeDisponible(teachD);}
+        if (victoireTotal1 == 50) {
+            placeDisponible(vegapunkD);}
+        if (victoireTotal1 == 51) {
+            placeDisponible(doyensD);}
+    }
+    public void placeDisponible(Description perso){
+        if (place == 1) {
+            clearAll();
+            visible(mapCarte);
+            perso2 = perso;
+            majParPlace(perso2, image2C, imagePersonnage2);
         }
-
+        if (place == 2) {
+            perso3 = perso;
+            majParPlace(perso3, image3C, imagePersonnage3);
+        }
+        if (place == 3) {
+            perso4 = perso;
+            majParPlace(perso4, image4C, imagePersonnage4);
+        }
     }
     public void majInventaireEquipage(){
         changeImageViewImg(imagePersonnage1,"personnages/"+joueurD.getImage());
