@@ -321,9 +321,9 @@ public class HelloController implements Initializable {
             100);
     Description cobyD = new Description("Coby",
             "pirate/coby.gif",
-            4000,
-            300,
+            1500,
             100,
+            50,
             50);
     Ennemis smokerE = new Ennemis("Smoker", "pirate/smoker.gif",
             2000,
@@ -333,9 +333,9 @@ public class HelloController implements Initializable {
             200);
     Description smokerD = new Description("Smoker",
             "pirate/smoker.gif",
-            4000,
-            300,
-            100,
+            2000,
+            150,
+            80,
             50);
     Ennemis namiE = new Ennemis("Nami", "pirate/nami.gif",
             2500,
@@ -662,13 +662,21 @@ public class HelloController implements Initializable {
             10,
             100000000);
 
-
-    Description perso2 = new Description("","",
+    Description perso2 = new Description("", "",
             0,
             0,
             0,
-            0 );
-
+            0);
+    Description perso3 = new Description("", "",
+            0,
+            0,
+            0,
+            0);
+    Description perso4 = new Description("", "",
+            0,
+            0,
+            0,
+            0);
 
     Description joueurD ;
     Ennemis e;
@@ -778,9 +786,6 @@ public class HelloController implements Initializable {
         visible(mapChoixCapitaine);
         joueurD = luffyD;
         afficherPersonnage(luffyD);
-        lblBerry1.setText(String.valueOf(berryActuel));
-        lblBerry2.setText(String.valueOf(berryActuel));
-        lblBerry3.setText(String.valueOf(berryActuel));
     }
 
     @FXML
@@ -793,7 +798,6 @@ public class HelloController implements Initializable {
     public void clickedEquipage(Event event) {
         clearAll();
         visible(mapEquipage);
-
     }
 
     @Deprecated
@@ -916,8 +920,7 @@ public class HelloController implements Initializable {
             joueurD.acheterAttaque();
             joueurD.setAttaque(joueurD.getAttaque());
             changerText(lblAttaqueD, joueurD.getAttaque());
-            System.out.println(prixAttaque);
-        }
+            System.out.println(prixAttaque);        }
     }
 
     @FXML
@@ -1334,6 +1337,7 @@ public class HelloController implements Initializable {
     public void clickedChoixCap(Event event) {
         clearAll();
         visible(mapDebut);
+        changerBerry();
     }
     public void afficherEnnemis(Ennemis ennemis){
         changeImageViewImg(imageEnnemis, "personnages/"+ennemis.getImage());
@@ -1742,24 +1746,51 @@ public class HelloController implements Initializable {
         clearAll();
         visible(mapChangerPersonnage);
     }
-    private Description temp;
-    @FXML
-    public void clickedSelect2(Event event) {
-        clearAll();
-        visible(mapCombat);
-        temp = joueurD;
-        joueurD = perso2;
-        perso2 = temp;
-        afficherPersonnage(joueurD);
-        changeImageViewImg(image2C, "personnages/"+perso2.getImage());
-
-    }
-
     @FXML
     public void clickedSelect1(Event event) {
         clearAll();
         visible(mapCombat);
     }
+    private Description temp;
+    @FXML
+    public void clickedSelect2(Event event) {
+        if (place >=1) {
+            clearAll();
+            visible(mapCombat);
+            temp = joueurD;
+            joueurD = perso2;
+            perso2 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(image2C, "personnages/" + perso2.getImage());
+        }
+    }
+
+    @FXML
+    public void clickedSelect3(Event event) {
+        if(place>=2) {
+            clearAll();
+            visible(mapCombat);
+            temp = joueurD;
+            joueurD = perso3;
+            perso3 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(image3C, "personnages/" + perso3.getImage());
+        }
+    }
+    @FXML
+    public void clickedSelect4(Event event) {
+        if(place >=3) {
+            clearAll();
+            visible(mapCombat);
+            temp = joueurD;
+            joueurD = perso4;
+            perso4 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(image4C, "personnages/" + perso4.getImage());
+        }
+    }
+
+
 
     @FXML
     public void clickedNon(Event event) {
@@ -1783,7 +1814,26 @@ public class HelloController implements Initializable {
                 perso2 = smokerD;
                 majParPlace(perso2, image2C, imagePersonnage2);
             }
+            if (place == 2){
+                perso3 = smokerD;
+                majParPlace(perso3, image3C, imagePersonnage3);
+            }
         }
+        if (victoireTotal1 == 3) {
+            if (place == 1) {
+                perso2 = namiD;
+                majParPlace(perso2, image2C, imagePersonnage2);
+            }
+            if (place == 2) {
+                perso3 = namiD;
+                majParPlace(perso3, image3C, imagePersonnage3);
+            }
+            if (place == 3) {
+                perso4 = namiD;
+                majParPlace(perso4, image4C, imagePersonnage4);
+            }
+        }
+
     }
     public void majInventaireEquipage(){
         changeImageViewImg(imagePersonnage1,"personnages/"+joueurD.getImage());
@@ -1803,6 +1853,29 @@ public class HelloController implements Initializable {
             afficherPersonnage(joueurD);
             changeImageViewImg(imagePersonnage2, "personnages/"+perso2.getImage());
             changeImageViewImg(image2C, "personnages/"+perso2.getImage());
+        }
+    }
+    @FXML
+    public void clickedPersonnage3(Event event) {
+        if (place >=2){
+            temp = joueurD;
+            joueurD = perso3;
+            perso3 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(imagePersonnage3, "personnages/"+perso3.getImage());
+            changeImageViewImg(image3C, "personnages/"+perso3.getImage());
+        }
+    }
+
+    @FXML
+    public void clickedPersonnage4(Event event) {
+        if (place >=3){
+            temp = joueurD;
+            joueurD = perso4;
+            perso4 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(imagePersonnage4, "personnages/"+perso4.getImage());
+            changeImageViewImg(image4C, "personnages/"+perso4.getImage());
         }
     }
 }

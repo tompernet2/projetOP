@@ -38,7 +38,6 @@ public class Description extends Node {
     }
     public boolean fuite(){
         if (alea()<= this.fuite){
-
             return true;
         }
         return false;
