@@ -254,6 +254,22 @@ public class HelloController implements Initializable {
     private ImageView image4C;
     @FXML
     private ImageView image3C;
+    @FXML
+    private ImageView imagePersonnage5;
+    @FXML
+    private ImageView imagePersonnage6;
+    @FXML
+    private ImageView imagePersonnage7;
+    @FXML
+    private ImageView imagePersonnage8;
+    @FXML
+    private ImageView image8C;
+    @FXML
+    private ImageView image7C;
+    @FXML
+    private ImageView image6C;
+    @FXML
+    private ImageView image5C;
 
     public void invisible(AnchorPane apCourante) {apCourante.setVisible(false);return;}
     public void visible(AnchorPane apCourante){apCourante.setVisible(true);return;}
@@ -964,6 +980,27 @@ public class HelloController implements Initializable {
             0,
             0,
             0);
+    Description perso5 = new Description("", "",
+            0,
+            0,
+            0,
+            0);
+    Description perso6 = new Description("", "",
+            0,
+            0,
+            0,
+            0);
+    Description perso7 = new Description("", "",
+            0,
+            0,
+            0,
+            0);
+    Description perso8 = new Description("", "",
+            0,
+            0,
+            0,
+            0);
+
 
     Description joueurD ;
     Ennemis e;
@@ -2076,7 +2113,54 @@ public class HelloController implements Initializable {
             changeImageViewImg(image4C, "personnages/" + perso4.getImage());
         }
     }
-
+    @FXML
+    public void clickedSelect5(Event event) {
+        if(place >=4) {
+            clearAll();
+            visible(mapCombat);
+            temp = joueurD;
+            joueurD = perso5;
+            perso5 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(image5C, "personnages/" + perso5.getImage());
+        }
+    }
+    @FXML
+    public void clickedSelect6(Event event) {
+        if(place >=5) {
+            clearAll();
+            visible(mapCombat);
+            temp = joueurD;
+            joueurD = perso6;
+            perso6 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(image6C, "personnages/" + perso6.getImage());
+        }
+    }
+    @FXML
+    public void clickedSelect7(Event event) {
+        if(place >=6) {
+            clearAll();
+            visible(mapCombat);
+            temp = joueurD;
+            joueurD = perso7;
+            perso7 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(image7C, "personnages/" + perso7.getImage());
+        }
+    }
+    @FXML
+    public void clickedSelect8(Event event) {
+        if(place >=7) {
+            clearAll();
+            visible(mapCombat);
+            temp = joueurD;
+            joueurD = perso8;
+            perso8 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(image8C, "personnages/" + perso8.getImage());
+        }
+    }
 
 
     @FXML
@@ -2088,7 +2172,7 @@ public class HelloController implements Initializable {
     @FXML
     public void clickedOui(Event event) {
         place +=1;
-        if (place>=4){
+        if (place>=8){
             place-=1;
             Alert erreur = new Alert(Alert.AlertType.INFORMATION);
             erreur.setContentText("L'equipage est complet");
@@ -2097,128 +2181,165 @@ public class HelloController implements Initializable {
             clearAll();
             visible(mapCarte);
         }
-        if (victoireTotal1 == 1){
-            if (place == 1){
-                perso2 = cobyD;
-                majParPlace(perso2, image2C, imagePersonnage2);
-                clearAll();
-                visible(mapCarte);
+        else {
+            if (victoireTotal1 == 1) {
+                placeDisponible(cobyD);
+            }
+            if (victoireTotal1 == 2) {
+                placeDisponible(smokerD);
+            }
+            if (victoireTotal1 == 3) {
+                placeDisponible(namiD);
+            }
+            if (victoireTotal1 == 4) {
+                placeDisponible(chopperD);
+            }
+            if (victoireTotal1 == 5) {
+                placeDisponible(brookD);
+            }
+            if (victoireTotal1 == 6) {
+                placeDisponible(robinD);
+            }
+            if (victoireTotal1 == 7) {
+                placeDisponible(zoroD);
+            }
+            if (victoireTotal1 == 8) {
+                placeDisponible(enerD);
+            }
+            if (victoireTotal1 == 9) {
+                placeDisponible(sentomaruD);
+            }
+            if (victoireTotal1 == 10) {
+                placeDisponible(magellanD);
+            }
+            if (victoireTotal1 == 11) {
+                placeDisponible(kakuD);
+            }
+            if (victoireTotal1 == 12) {
+                placeDisponible(lucciD);
+            }
+            if (victoireTotal1 == 13) {
+                placeDisponible(fujitoraD);
+            }
+            if (victoireTotal1 == 14) {
+                placeDisponible(kizaruD);
+            }
+            if (victoireTotal1 == 15) {
+                placeDisponible(aokijiD);
+            }
+            if (victoireTotal1 == 16) {
+                placeDisponible(akainuD);
+            }
+            if (victoireTotal1 == 17) {
+                placeDisponible(garpD);
+            }
+            if (victoireTotal1 == 18) {
+                placeDisponible(sengokuD);
+            }
+            if (victoireTotal1 == 19) {
+                placeDisponible(foxyD);
+            }
+            if (victoireTotal1 == 20) {
+                placeDisponible(morganD);
+            }
+            if (victoireTotal1 == 21) {
+                placeDisponible(monetD);
+            }
+            if (victoireTotal1 == 22) {
+                placeDisponible(cesarD);
+            }
+            if (victoireTotal1 == 23) {
+                placeDisponible(giantD);
+            }
+            if (victoireTotal1 == 24) {
+                placeDisponible(trebolD);
+            }
+            if (victoireTotal1 == 25) {
+                placeDisponible(doflamingoD);
+            }
+            if (victoireTotal1 == 26) {
+                placeDisponible(jinbeD);
+            }
+            if (victoireTotal1 == 27) {
+                placeDisponible(moriaD);
+            }
+            if (victoireTotal1 == 28) {
+                placeDisponible(marcoD);
+            }
+            if (victoireTotal1 == 29) {
+                placeDisponible(mihawkD);
+            }
+            if (victoireTotal1 == 30) {
+                placeDisponible(shanksD);
+            }
+            if (victoireTotal1 == 31) {
+                placeDisponible(shikiD);
+            }
+            if (victoireTotal1 == 32) {
+                placeDisponible(orochiD);
+            }
+            if (victoireTotal1 == 33) {
+                placeDisponible(whoD);
+            }
+            if (victoireTotal1 == 34) {
+                placeDisponible(drakeD);
+            }
+            if (victoireTotal1 == 35) {
+                placeDisponible(sasakiD);
+            }
+            if (victoireTotal1 == 36) {
+                placeDisponible(blackmariaD);
+            }
+            if (victoireTotal1 == 37) {
+                placeDisponible(yamatoD);
+            }
+            if (victoireTotal1 == 38) {
+                placeDisponible(jackD);
+            }
+            if (victoireTotal1 == 39) {
+                placeDisponible(queenD);
+            }
+            if (victoireTotal1 == 40) {
+                placeDisponible(kingD);
+            }
+            if (victoireTotal1 == 41) {
+                placeDisponible(bigmomD);
+            }
+            if (victoireTotal1 == 42) {
+                placeDisponible(kaidoD);
+            }
+            if (victoireTotal1 == 43) {
+                placeDisponible(vascoD);
+            }
+            if (victoireTotal1 == 44) {
+                placeDisponible(pizarroD);
+            }
+            if (victoireTotal1 == 45) {
+                placeDisponible(wasatsumiD);
+            }
+            if (victoireTotal1 == 46) {
+                placeDisponible(augurD);
+            }
+            if (victoireTotal1 == 47) {
+                placeDisponible(devonD);
+            }
+            if (victoireTotal1 == 48) {
+                placeDisponible(burgessD);
+            }
+            if (victoireTotal1 == 49) {
+                placeDisponible(teachD);
+            }
+            if (victoireTotal1 == 50) {
+                placeDisponible(vegapunkD);
+            }
+            if (victoireTotal1 == 51) {
+                placeDisponible(doyensD);
             }
         }
-        if (victoireTotal1 == 2){
-            if (place == 1){
-                perso2 = smokerD;
-                majParPlace(perso2, image2C, imagePersonnage2);
-                clearAll();
-                visible(mapCarte);
-            }
-            if (place == 2){
-                perso3 = smokerD;
-                majParPlace(perso3, image3C, imagePersonnage3);
-                clearAll();
-                visible(mapCarte);
-            }
-        }
-        if (victoireTotal1 == 3) {
-            placeDisponible(namiD);}
-        if (victoireTotal1 == 4) {
-            placeDisponible(chopperD);}
-        if (victoireTotal1 == 5) {
-            placeDisponible(brookD);}
-        if (victoireTotal1 == 6) {
-            placeDisponible(robinD);}
-        if (victoireTotal1 == 7) {
-            placeDisponible(zoroD);}
-        if (victoireTotal1 == 8) {
-            placeDisponible(enerD);}
-        if (victoireTotal1 == 9) {
-            placeDisponible(sentomaruD);}
-        if (victoireTotal1 == 10) {
-            placeDisponible(magellanD);}
-        if (victoireTotal1 == 11) {
-            placeDisponible(kakuD);}
-        if (victoireTotal1 == 12) {
-            placeDisponible(lucciD);}
-        if (victoireTotal1 == 13) {
-            placeDisponible(fujitoraD);}
-        if (victoireTotal1 == 14) {
-            placeDisponible(kizaruD);}
-        if (victoireTotal1 == 15) {
-            placeDisponible(aokijiD);}
-        if (victoireTotal1 == 16) {
-            placeDisponible(akainuD);}
-        if (victoireTotal1 == 17) {
-            placeDisponible(garpD);}
-        if (victoireTotal1 == 18) {
-            placeDisponible(sengokuD);}
-        if (victoireTotal1 == 19) {
-            placeDisponible(foxyD);}
-        if (victoireTotal1 == 20) {
-            placeDisponible(morganD);}
-        if (victoireTotal1 == 21) {
-            placeDisponible(monetD);}
-        if (victoireTotal1 == 22) {
-            placeDisponible(cesarD);}
-        if (victoireTotal1 == 23) {
-            placeDisponible(giantD);}
-        if (victoireTotal1 == 24) {
-            placeDisponible(trebolD);}
-        if (victoireTotal1 == 25) {
-            placeDisponible(doflamingoD);}
-        if (victoireTotal1 == 26) {
-            placeDisponible(jinbeD);}
-        if (victoireTotal1 == 27) {
-            placeDisponible(moriaD);}
-        if (victoireTotal1 == 28) {
-            placeDisponible(marcoD);}
-        if (victoireTotal1 == 29) {
-            placeDisponible(mihawkD);}
-        if (victoireTotal1 == 30) {
-            placeDisponible(shanksD);}
-        if (victoireTotal1 == 31) {
-            placeDisponible(shikiD);}
-        if (victoireTotal1 == 32) {
-            placeDisponible(orochiD);}
-        if (victoireTotal1 == 33) {
-            placeDisponible(whoD);}
-        if (victoireTotal1 == 34) {
-            placeDisponible(drakeD);}
-        if (victoireTotal1 == 35) {
-            placeDisponible(sasakiD);}
-        if (victoireTotal1 == 36) {
-            placeDisponible(blackmariaD);}
-        if (victoireTotal1 == 37) {
-            placeDisponible(yamatoD);}
-        if (victoireTotal1 == 38) {
-            placeDisponible(jackD);}
-        if (victoireTotal1 == 39) {
-            placeDisponible(queenD);}
-        if (victoireTotal1 == 40) {
-            placeDisponible(kingD);}
-        if (victoireTotal1 == 41) {
-            placeDisponible(bigmomD);}
-        if (victoireTotal1 == 42) {
-            placeDisponible(kaidoD);}
-        if (victoireTotal1 == 43) {
-            placeDisponible(vascoD);}
-        if (victoireTotal1 == 44) {
-            placeDisponible(pizarroD);}
-        if (victoireTotal1 == 45) {
-            placeDisponible(wasatsumiD);}
-        if (victoireTotal1 == 46) {
-            placeDisponible(augurD);}
-        if (victoireTotal1 == 47) {
-            placeDisponible(devonD);}
-        if (victoireTotal1 == 48) {
-            placeDisponible(burgessD);}
-        if (victoireTotal1 == 49) {
-            placeDisponible(teachD);}
-        if (victoireTotal1 == 50) {
-            placeDisponible(vegapunkD);}
-        if (victoireTotal1 == 51) {
-            placeDisponible(doyensD);}
     }
     public void placeDisponible(Description perso){
+        clearAll();
+        visible(mapCarte);
         if (place == 1) {
             clearAll();
             visible(mapCarte);
@@ -2232,6 +2353,22 @@ public class HelloController implements Initializable {
         if (place == 3) {
             perso4 = perso;
             majParPlace(perso4, image4C, imagePersonnage4);
+        }
+        if (place == 4) {
+            perso5 = perso;
+            majParPlace(perso5, image5C, imagePersonnage5);
+        }
+        if (place == 5) {
+            perso6 = perso;
+            majParPlace(perso6, image6C, imagePersonnage6);
+        }
+        if (place == 6) {
+            perso7 = perso;
+            majParPlace(perso7, image7C, imagePersonnage7);
+        }
+        if (place == 7) {
+            perso8 = perso;
+            majParPlace(perso8, image8C, imagePersonnage8);
         }
     }
     public void majInventaireEquipage(){
@@ -2277,4 +2414,57 @@ public class HelloController implements Initializable {
             changeImageViewImg(image4C, "personnages/"+perso4.getImage());
         }
     }
+    @FXML
+    public void clickedPersonnage5(Event event) {
+        if (place >=4){
+            temp = joueurD;
+            joueurD = perso5;
+            perso5 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(imagePersonnage5, "personnages/"+perso5.getImage());
+            changeImageViewImg(image5C, "personnages/"+perso5.getImage());
+        }
+    }
+    @FXML
+    public void clickedPersonnage6(Event event) {
+        if (place >=5){
+            temp = joueurD;
+            joueurD = perso6;
+            perso6 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(imagePersonnage6, "personnages/"+perso6.getImage());
+            changeImageViewImg(image6C, "personnages/"+perso6.getImage());
+        }
+    }
+    @FXML
+    public void clickedPersonnage7(Event event) {
+        if (place >=6){
+            temp = joueurD;
+            joueurD = perso7;
+            perso7 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(imagePersonnage7, "personnages/"+perso7.getImage());
+            changeImageViewImg(image7C, "personnages/"+perso7.getImage());
+        }
+    }
+
+    @FXML
+    public void clickedPersonnage8(Event event) {
+        if (place >=7){
+            temp = joueurD;
+            joueurD = perso8;
+            perso8 = temp;
+            afficherPersonnage(joueurD);
+            changeImageViewImg(imagePersonnage8, "personnages/"+perso8.getImage());
+            changeImageViewImg(image8C, "personnages/"+perso8.getImage());
+        }
+    }
+
+
+
+
+
+
+
+
 }
